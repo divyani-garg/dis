@@ -6,19 +6,18 @@ import { ForgotPasswordComponent } from './User_Authentication/forgot-password/f
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
 
 const routes: Routes = [
-  { path: 'forgot-password', 
+  { path: 'forgot-password',
      component: ForgotPasswordComponent
   },
-  { path: 'reset-password', 
+  { path: 'reset-password',
      component: ResetPasswordComponent
   },
-  { path: 'signup', 
+  { path: 'signup',
      component: SignUpComponent
   },
-  { path: '', 
+  { path: '',
     component: LoginComponent
-  }
-]
+  }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
