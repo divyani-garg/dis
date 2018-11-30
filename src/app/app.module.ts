@@ -11,11 +11,18 @@ import { SignUpComponent } from './User_Authentication/sign-up/sign-up.component
 import { ForgotPasswordComponent } from './User_Authentication/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
 import { NavigationComponent } from './student/navigation/navigation.component';
+<<<<<<< HEAD
 import { GradesComponent } from './student/grades/grades.component';
 import { AlertsComponent } from './student/alerts/alerts.component';
 import { AssignmentsComponent } from './student/assignments/assignments.component';
 import { ComplaintsComponent } from './student/complaints/complaints.component';
 import { ProfileComponent } from './student/profile/profile.component';
+=======
+import { HomeComponent } from './student/home/home.component';
+import { AboutComponent } from './student/about/about.component';
+import { TimetableComponent } from './student/timetable/timetable.component';
+import { AttendanceComponent } from './student/attendance/attendance.component';
+>>>>>>> e5878edbcc2973b17da6409927c2c106dcabd182
 
 @NgModule({
   declarations: [
@@ -26,11 +33,18 @@ import { ProfileComponent } from './student/profile/profile.component';
     ForgotPasswordComponent,
     ResetPasswordComponent,
     NavigationComponent,
+<<<<<<< HEAD
     GradesComponent,
     AlertsComponent,
     AssignmentsComponent,
     ComplaintsComponent,
     ProfileComponent
+=======
+    HomeComponent,
+    AboutComponent,
+    TimetableComponent,
+    AttendanceComponent
+>>>>>>> e5878edbcc2973b17da6409927c2c106dcabd182
   ],
   imports: [
     BrowserModule,
