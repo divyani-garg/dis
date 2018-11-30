@@ -11,6 +11,10 @@ import { SignUpComponent } from './User_Authentication/sign-up/sign-up.component
 import { ForgotPasswordComponent } from './User_Authentication/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
 import { NavigationComponent } from './student/navigation/navigation.component';
+import { HomeComponent } from './student/home/home.component';
+import { AboutComponent } from './student/about/about.component';
+import { TimetableComponent } from './student/timetable/timetable.component';
+import { AttendanceComponent } from './student/attendance/attendance.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { NavigationComponent } from './student/navigation/navigation.component';
     SignUpComponent,
     ForgotPasswordComponent,
     ResetPasswordComponent,
-    NavigationComponent
+    NavigationComponent,
+    HomeComponent,
+    AboutComponent,
+    TimetableComponent,
+    AttendanceComponent
   ],
   imports: [
     BrowserModule,
