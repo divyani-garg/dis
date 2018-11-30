@@ -1,9 +1,11 @@
+import { StudentComponent } from './student/student/student.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './User_Authentication/login/login.component';
 import { SignUpComponent } from './User_Authentication/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './User_Authentication/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
+import { StudentRoutingModule } from './student/student-routing.module';
 
 const routes: Routes = [
   { path: 'forgot-password',
@@ -16,11 +18,12 @@ const routes: Routes = [
      component: SignUpComponent
   },
   { path: '',
-    component: LoginComponent
-  }];
+    component: StudentComponent
+  },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), StudentRoutingModule],
   exports: [RouterModule]
 })
 
