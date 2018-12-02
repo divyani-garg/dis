@@ -1,3 +1,4 @@
+import { AttendanceComponent } from './student/attendance/attendance.component';
 import { StudentRoutingModule } from './student/student-routing.module';
 import { StudentModule } from './student/student.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,6 +20,8 @@ import { AssignmentsComponent } from './student/assignments/assignments.componen
 import { ComplaintsComponent } from './student/complaints/complaints.component';
 import { ProfileComponent } from './student/profile/profile.component';
 import { StudentComponent } from './student/student/student.component';
+import { AboutComponent } from './student/about/about.component';
+import { TimetableComponent } from './student/timetable/timetable.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { StudentComponent } from './student/student/student.component';
     AssignmentsComponent,
     ComplaintsComponent,
     ProfileComponent,
-    StudentComponent
+    StudentComponent,
+    AttendanceComponent,
+    AboutComponent,
+    TimetableComponent
   ],
   imports: [
     BrowserModule,
