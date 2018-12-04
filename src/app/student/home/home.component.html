@@ -1,1 +1,182 @@
-<h1>This is student home</h1>
+
+<link href='../../../assets/calendar/fullcalendar.min.css' rel='stylesheet' />
+  <link href='../../../assets/calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+  <script src='../../../assets/calendar/lib/moment.min.js'></script>
+  <script src='../../../assets/calendar/lib/jquery.min.js'></script>
+  <script src='../../../assets/calendar/fullcalendar.min.js'></script>
+
+ <script type="text/javascript" src="../../../assets/js/chart.bundle.min.js"></script>
+
+
+  	<script>
+
+		   $(document).ready(function() {
+
+			$('#calendar').fullCalendar({
+			  header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			  },
+			  defaultDate: '2018-09-06',
+			  aspectRatio: 1,
+			  navLinks: true, // can click day/week names to navigate views
+			  editable: true,
+			  eventLimit: true, // allow "more" link when too many events
+			  events: [
+				{
+				  title: 'All Day Event',
+				  start: '2018-01-26'
+				},
+				{
+				  title: 'Long Event',
+				  start: '2018-03-07',
+				  end: '2018-03-10'
+				},
+				{
+				  id: 999,
+				  title: 'Repeating Event',
+				  start: '2018-01-13T16:00:00'
+				},
+				{
+				  id: 999,
+				  title: 'Repeating Event',
+				  start: '2018-03-16T16:00:00'
+				},
+				{
+				  title: 'Conference',
+				  start: '2018-03-11',
+				  end: '2018-03-13'
+				},
+				{
+				  title: 'Meeting',
+				  start: '2018-03-12T10:30:00',
+				  end: '2018-03-12T12:30:00'
+				},
+				{
+				  title: 'Lunch',
+				  start: '2018-03-12T12:00:00'
+				},
+				{
+				  title: 'Meeting',
+				  start: '2018-03-12T14:30:00'
+				},
+				{
+				  title: 'Happy Hour',
+				  start: '2018-03-12T17:30:00'
+				},
+				{
+				  title: 'Dinner',
+				  start: '2018-03-12T20:00:00'
+				},
+				{
+				  title: 'Birthday Party',
+				  start: '2018-03-13T07:00:00'
+				},
+				{
+				  title: 'Click for Google',
+				  url: 'http://google.com/',
+				  start: '2018-01-21'
+				}
+			  ]
+			});
+
+		  });
+
+		</script>
+
+<div class="container">
+  <div class="row">
+
+<!--Start Left Panel-->
+    <div class="col-lg-3 profile-info">
+      <app-sidenavigation></app-sidenavigation>
+      <div class="scheme downloadables">
+        <div>
+          <i class="fa fa-file-text" style="font-size: 48px; color: #0085cc;" aria-hidden="true"></i>
+          <h5><a href="#">Download Scheme</a></h5>
+          <h6>2016-2020</h6>
+        </div>
+        <hr/>
+        <div>
+          <i class="fa fa-file-text" style="font-size: 48px; color: #0085cc;" aria-hidden="true"></i>
+          <h5><a href="#">Download Syllabus</a></h5>
+          <h6>2016-2020</h6>
+        </div>
+      </div>
+    </div>
+
+  <!--End Left Panel-->
+
+
+    <!--Start Right Panel-->
+    <div class="col-lg-9 kyc-colm user-management">
+      <div class="kyc-section rewards-section reports-sectn">
+      <!--Calendar comes in below div-->
+  <div class="row">
+    <div class="col">
+    <h3 class="heading">Calendar</h3>
+    <hr/>
+     <div id='calendar'></div>
+     </div>
+     <div class="col">
+     <h3  class="heading" >Attendance</h3>
+     <hr/>
+     <div class="chart-container">
+        <canvas id="myChart"></canvas>
+       <script src="../../../assets/js/barchart.js"></script>
+     </div>
+    </div>
+    </div>
+    <!--End Right Panel-->
+
+  <!--Notification Panel starts-->
+  <div class="notifiactiion heading">
+  <br/>
+  <br/>
+    <h2>Notifications</h2>
+    <hr/>
+  </div>
+  <div>
+    <div class="alert alert-success row">
+      <h4 class="col-12">Mid Term-2 Time table</h4>
+      <p class="col"> Start date: 24/08/2017</p>
+      <div class="col">
+      <img class="download float-left" src="../../../assets/images/download.png" alt=""/>
+      <a href="#"> download Time Table</a>
+      </div>
+      <div class="col">
+      <img class="download float-left" src="../../../assets/images/download.png" alt=""/>
+      <a href="#"> download Sitting Arrangement</a>
+      </div>
+    </div>
+    <div class="alert alert-success row">
+      <h4 class="col-12">CO34002 Assignment #04</h4>
+      <p class="col-4"> Date of submission: 29/08/2017</p>
+      <div class="col-7">
+      <img class="download float-left" src="../../../assets/images/download.png" alt=""/>
+      <a href="#"> download Assignment</a>
+      </div>
+    </div>
+    <div class="alert alert-success row">
+      <h4 class="col-12">Mid Term-1 Time table</h4>
+      <p class="col"> Start date: 24/08/2017</p>
+      <div class="col">
+      <img class="download float-left" src="../../../assets/images/download.png" alt=""/>
+      <a href="#"> download Time Table</a>
+      </div>
+      <div class="col">
+      <img class="download float-left" src="../../../assets/images/download.png" alt=""/>
+      <a href="#"> download Sitting Arrangement</a>
+      </div>
+    </div>
+  </div>
+  <!--Notification Panel Ends-->
+      </div>
+
+    </div>
+
+  <!--End Right Panel-->
+
+  </div>
+</div>

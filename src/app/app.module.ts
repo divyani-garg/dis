@@ -1,4 +1,3 @@
-import { AttendanceComponent } from './student/attendance/attendance.component';
 import { StudentRoutingModule } from './student/student-routing.module';
 import { StudentModule } from './student/student.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,15 +12,7 @@ import { LoginComponent } from './User_Authentication/login/login.component';
 import { SignUpComponent } from './User_Authentication/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './User_Authentication/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
-import { NavigationComponent } from './student/navigation/navigation.component';
-import { GradesComponent } from './student/grades/grades.component';
-import { AlertsComponent } from './student/alerts/alerts.component';
-import { AssignmentsComponent } from './student/assignments/assignments.component';
-import { ComplaintsComponent } from './student/complaints/complaints.component';
-import { ProfileComponent } from './student/profile/profile.component';
-import { StudentComponent } from './student/student/student.component';
-import { AboutComponent } from './student/about/about.component';
-import { TimetableComponent } from './student/timetable/timetable.component';
+
 
 @NgModule({
   declarations: [
@@ -30,17 +21,7 @@ import { TimetableComponent } from './student/timetable/timetable.component';
     LoginComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent,
-    NavigationComponent,
-    GradesComponent,
-    AlertsComponent,
-    AssignmentsComponent,
-    ComplaintsComponent,
-    ProfileComponent,
-    StudentComponent,
-    AttendanceComponent,
-    AboutComponent,
-    TimetableComponent
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
