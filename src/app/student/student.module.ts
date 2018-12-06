@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { SidenavigationComponent } from './sidenavigation/sidenavigation.component';
 import { AttendanceComponent } from './attendance/attendance.component';
+import { BarchartComponent } from './../miscellaneous/barchart/barchart.component';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { AttendanceComponent } from './attendance/attendance.component';
     AttendanceComponent,
     AboutComponent,
     TimetableComponent,
-    SidenavigationComponent
-  ]
+    SidenavigationComponent,
+    BarchartComponent
+  ],
+  providers: [BarchartComponent]
 })
 export class StudentModule { }
