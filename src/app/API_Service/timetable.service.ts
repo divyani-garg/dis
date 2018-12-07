@@ -7,11 +7,11 @@ import { Injectable } from '@angular/core';
 })
 export class TimetableService {
 
-  private baseUrl = 'http://localhost:8000/dis';
+  private baseUrl = 'http://localhost:8080/student';
 
   constructor(private http: HttpClient) { }
 
   getTimetable(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/semesterTimeTable`);
+    return this.http.get(`${this.baseUrl}/student_timetable`);
   }
 }
