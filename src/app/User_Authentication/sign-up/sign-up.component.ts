@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentSignUp } from '../../Model/student-sign-up.model';
-import { StudentSignUpService } from '../../API Service/student-sign-up.service';
+import { StudentSignUpService } from '../../API_Service/student-sign-up.service';
 
 @Component({
   selector: 'app-sign-up',

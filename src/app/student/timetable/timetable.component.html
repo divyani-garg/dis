@@ -1,3 +1,150 @@
-<p>
-  timetable works!
-</p>
+<div class="container">
+  <div class="row">
+
+<!--Start Left Panel-->
+    <div class="col-lg-3 profile-info">
+      <app-sidenavigation></app-sidenavigation>
+  <div class="syllabusDownload">
+    <div>
+      <h5 class="heading">Download Syllabus</h5>
+      <hr/>
+      <h6><a href="#" style="text-decoration:none;">CO34007 Computer Networks</a></h6>
+      <h6><a href="#" style="text-decoration:none;">CO34002 Theory of Computation</a></h6>
+      <h6><a href="#" style="text-decoration:none;">CO34008 Object Oriented Software Engineering</a></h6>
+      <h6><a href="#" style="text-decoration:none;">CO34005 Database Management System</a></h6>
+      <h6><a href="#" style="text-decoration:none;">EC34013 Introduction to Microprocessors</a></h6>
+  </div>
+
+      </div>
+
+    </div>
+
+  <!--End Left Panel-->
+
+
+    <!--Start Right Panel-->
+    <div class="col-lg-9 kyc-colm user-management">
+      <div class="kyc-section rewards-section reports-sectn">
+      <!--Time Table comes in below div-->
+   <div>
+     <h3  class="heading" >Time Table</h3>
+     <hr/>
+    <div class="table-responsive">
+      <table class="table table-bordered " id="tt" >
+        <thead>
+                  <tr>
+          <td colspan="3">Days</td>
+                    <td colspan="3">Monday</td>
+                    <td colspan="3">Tuesday</td>
+                    <td colspan="3">Wednesday</td>
+          <td colspan="3">Thursday</td>
+          <td colspan="3">Friday</td>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+          <td colspan="3">10:00-11:00</td>
+                    <td colspan="3" rowspan="2">CO34007(Lab) <br/> B1-B2</td>
+                    <td colspan="3">CO34007</td>
+                    <td colspan="3">CO34002</td>
+          <td colspan="3">CO34007</td>
+          <td colspan="3">CO34008</td>
+                  </tr>
+
+        <tr>
+          <td colspan="3">11:00-12:00</td>
+                    <td colspan="3">CO34008</td>
+                    <td colspan="3">CO34005</td>
+          <td colspan="3">CO34005</td>
+          <td colspan="3">CO34005</td>
+                  </tr>
+
+         <tr>
+          <td colspan="3">12:00-01:00</td>
+          <td colspan="3">CO34007</td>
+          <td colspan="3">EC34013</td>
+          <td colspan="3">EC34013</td>
+          <td colspan="3">EC34013</td>
+          <td colspan="3">CO34005(Tut)</td>
+                  </tr>
+
+         <tr>
+          <td colspan="3">01:00-02:00</td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+          <td colspan="3"></td>
+          <td colspan="3"></td>
+                  </tr>
+
+        <tr>
+          <td colspan="3">02:00-03:00</td>
+                    <td colspan="3">C034008</td>
+                    <td rowspan="2">CO34007(Tut) <br/> B3-B4</td>
+          <td rowspan="2">EC34013(Lab) <br/> B1</td>
+          <td rowspan="2">CO34008(Lab) <br/> B2</td>
+          <td rowspan="2">EC34013(Lab) <br/> B2</td>
+          <td rowspan="2">CO34007(Lab) <br/> B3-B4 </td>
+          <td rowspan="2">CO34008(Lab) <br/> B1</td>
+          <td rowspan="2">EC34013(Lab) <br/> B3</td>
+                    <td rowspan="2">CO34005(Lab) <br/> B1-B2</td>
+          <td rowspan="2">CO34008(Lab) <br/> B4</td>
+          <td colspan="3"></td>
+                  </tr>
+
+        <tr>
+          <td colspan="3">03:00-04:00</td>
+                    <td colspan="3">CO34002</td>
+          <td colspan="3"></td>
+                  </tr>
+
+        <tr>
+          <td colspan="3">04:00-05:00</td>
+                    <td colspan="3" rowspan="2">CO34005(Lab) <br/> B3-B4</td>
+                    <td colspan="3">CO34002</td>
+          <td colspan="3">CO34007(Tut)</td>
+                    <td rowspan="2" colspan="2">EC34013(Lab)<br/> B4</td>
+          <td rowspan="2" colspan="2">CO34008(Lab) <br/> B3</td>
+          <td colspan="3"></td>
+                  </tr>
+
+        <tr>
+          <td colspan="3">05:00-06:00</td>
+
+                    <td colspan="3">CO34007(Tut)</td>
+          <td colspan="3">CO34002(Tut)</td>
+
+          <td></td>
+                  </tr>
+          </tbody>
+              </table>
+    </div>
+    </div>
+    <!--End Right Panel-->
+    </div>
+  <div class="row">
+    <div class=" col-8 otherDownload float-left">
+    <div>
+      <h5>Other Time tables (downloadable format)</h5>
+      <hr/>
+      <button type="button" class="btn btn-light float-left" style="margin-right:30px"><img style="padding-right:10px; height: 35px; width: 35px;" src="assets/images/download.png" alt=""/>Mid term 1</button>
+      <button type="button" class="btn btn-light float-left" style="margin-right:30px"><img style="padding-right:10px; height: 35px; width: 35px;" src="assets/images/download.png" alt=""/>Mid tern 2</button>
+      <button type="button" class="btn btn-light float-left" style="margin-right:30px"><img style="padding-right:10px; height: 35px; width: 35px;" src="assets/images/download.png" alt=""/>Quiz</button>
+  </div>
+
+      </div>
+
+  <div class="col-4 scheme downloadables">
+    <div>
+      <h5><a href="#" style="color: #0085cc;"><img style="padding-right:10px; height: 40px; width: 40px;" src="assets/images/download.png" alt=""/>Academic Calender Download </a> <h6>2018-2019</h6></h5>
+    </div>
+  </div>
+  </div>
+
+    </div>
+
+  <!--End Right Panel-->
+
+  </div>
+</div>

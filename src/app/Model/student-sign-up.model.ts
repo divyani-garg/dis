@@ -1,4 +1,4 @@
-export class StudentSignUp {    
+export class StudentSignUp {
     id: number;
     enrollment_id: string;
     password: string;

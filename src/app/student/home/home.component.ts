@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BarchartComponent } from './../../miscellaneous/barchart/barchart.component';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  bar = [];
+  constructor(public chart: BarchartComponent) { }
 
   ngOnInit() {
+    this.bar = this.chart.getBarChart('barChart');
   }
-
 }

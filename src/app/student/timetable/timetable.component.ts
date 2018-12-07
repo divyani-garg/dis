@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SemesterTimetable } from '../../Model/semester-timetable.model';
+import { TimetableService } from '../../API_Service/timetable.service';
 
 @Component({
   selector: 'app-timetable',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimetableComponent implements OnInit {
 
-  constructor() { }
+  @Input() tt: any;
+
+  constructor(private timetable: TimetableService) { }
 
   ngOnInit() {
+    this.tt = this.timetable.getTimetable()
+    .subscribe( data => {
+    console.log(data)})
+
   }
 
 }
