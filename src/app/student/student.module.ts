@@ -1,3 +1,4 @@
+import { CalendarComponent } from './../miscellaneous/calendar/calendar.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -35,8 +36,9 @@ import { BarchartComponent } from './../miscellaneous/barchart/barchart.componen
     AboutComponent,
     TimetableComponent,
     SidenavigationComponent,
-    BarchartComponent
+    BarchartComponent,
+    CalendarComponent
   ],
-  providers: [BarchartComponent]
+  providers: [BarchartComponent, CalendarComponent]
 })
 export class StudentModule { }
