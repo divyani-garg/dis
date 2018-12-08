@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Time } from '@angular/common';
+=======
+import { Time } from "../../../node_modules/@angular/common";
+>>>>>>> 3a816257cf09446d1e42d4fad83d7cc79209aaf1
 
 export class SemesterTimetable {
   session: String;

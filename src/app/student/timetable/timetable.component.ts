@@ -14,7 +14,10 @@ export class TimetableComponent implements OnInit {
   constructor(private timetable: TimetableService) { }
 
   ngOnInit() {
-    this.tt = this.timetable.getTimetable();
+    this.tt = this.timetable.getTimetable()
+    .subscribe( data => {
+    console.log(data)})
+
   }
 
 }
