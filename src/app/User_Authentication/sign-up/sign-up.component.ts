@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentSignUp } from '../../Model/student-sign-up.model';
-import { StudentSignUpService } from '../../API Service/student-sign-up.service';
+import { StudentSignUpService } from '../../API_Service/student-sign-up.service';
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss']
 })
-export class SignUpComponent implements OnInit 
-{
+export class SignUpComponent implements OnInit {
   studentSignUp: StudentSignUp = new StudentSignUp();
   submitted = false;
 

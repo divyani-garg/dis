@@ -1,10 +1,12 @@
+import { Time } from '@angular/common';
+
 export class SemesterTimetable {
   session: String;
   year: String;
   semester: String;
   subjectCode: String;
-  from: TimerHandler;
-  to: TimerHandler;
+  from: Time;
+  to: Time;
   day: String;
   type: String;
   faculty_1: String;
