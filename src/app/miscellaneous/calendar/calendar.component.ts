@@ -12,7 +12,7 @@ export class CalendarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('head').append('<link rel="stylesheet" href="" type="text/css" />');
+    $('head').append('<link rel="stylesheet" href="../../../assets/css/fullcalendar.min.css" type="text/css" />');
         $(document).ready(function() {
 
           $('#calendar').fullCalendar({
