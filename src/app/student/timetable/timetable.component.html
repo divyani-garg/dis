@@ -43,82 +43,15 @@
         </thead>
 
         <tbody>
-          <tr>
-            <td colspan="3">10:00-11:00</td>
-            <td colspan="3" rowspan="2">CO34007(Lab) <br/> B1-B2</td>
-            <td colspan="3">CO34007</td>
-            <td colspan="3">CO34002</td>
-            <td colspan="3">CO34007</td>
-            <td colspan="3">CO34008</td>
-                  </tr>
-
-        <tr>
-          <td colspan="3">11:00-12:00</td>
-                    <td colspan="3">CO34008</td>
-                    <td colspan="3">CO34005</td>
-          <td colspan="3">CO34005</td>
-          <td colspan="3">CO34005</td>
-                  </tr>
-
-         <tr>
-          <td colspan="3">12:00-01:00</td>
-          <td colspan="3">CO34007</td>
-          <td colspan="3">EC34013</td>
-          <td colspan="3">EC34013</td>
-          <td colspan="3">EC34013</td>
-          <td colspan="3">CO34005(Tut)</td>
-                  </tr>
-
-         <tr>
-          <td colspan="3">01:00-02:00</td>
-                    <td colspan="3"></td>
-                    <td colspan="3"></td>
-                    <td colspan="3"></td>
-          <td colspan="3"></td>
-          <td colspan="3"></td>
-                  </tr>
-
-        <tr>
-          <td colspan="3">02:00-03:00</td>
-                    <td colspan="3">C034008</td>
-                    <td rowspan="2">CO34007(Tut) <br/> B3-B4</td>
-          <td rowspan="2">EC34013(Lab) <br/> B1</td>
-          <td rowspan="2">CO34008(Lab) <br/> B2</td>
-          <td rowspan="2">EC34013(Lab) <br/> B2</td>
-          <td rowspan="2">CO34007(Lab) <br/> B3-B4 </td>
-          <td rowspan="2">CO34008(Lab) <br/> B1</td>
-          <td rowspan="2">EC34013(Lab) <br/> B3</td>
-                    <td rowspan="2">CO34005(Lab) <br/> B1-B2</td>
-          <td rowspan="2">CO34008(Lab) <br/> B4</td>
-          <td colspan="3"></td>
-                  </tr>
-
-        <tr>
-          <td colspan="3">03:00-04:00</td>
-                    <td colspan="3">CO34002</td>
-          <td colspan="3"></td>
-                  </tr>
-
-        <tr>
-          <td colspan="3">04:00-05:00</td>
-                    <td colspan="3" rowspan="2">CO34005(Lab) <br/> B3-B4</td>
-                    <td colspan="3">CO34002</td>
-          <td colspan="3">CO34007(Tut)</td>
-                    <td rowspan="2" colspan="2">EC34013(Lab)<br/> B4</td>
-          <td rowspan="2" colspan="2">CO34008(Lab) <br/> B3</td>
-          <td colspan="3"></td>
-                  </tr>
-
-        <tr>
-          <td colspan="3">05:00-06:00</td>
-
-                    <td colspan="3">CO34007(Tut)</td>
-          <td colspan="3">CO34002(Tut)</td>
-
-          <td></td>
-                  </tr>
-          </tbody>
-              </table>
+          <ng-container *ngFor = "let col of columnHeaders">
+          <tr *ngFor= "let data of lec">
+            <td *ngIf="data.day===col">
+              {{data.subjectCode}}
+            </td>
+          </tr>
+          </ng-container>
+        </tbody>
+      </table>
     </div>
     </div>
     <!--End Right Panel-->

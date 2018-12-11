@@ -10,14 +10,19 @@ import { TimetableService } from '../../API_Service/timetable.service';
 export class TimetableComponent implements OnInit {
 
   @Input() tt: any;
+  columnHeaders: String[];
+  rowHeaders: String[];
+  lec: any[];
 
   constructor(private timetable: TimetableService) { }
 
   ngOnInit() {
     this.tt = this.timetable.getTimetable()
     .subscribe( data => {
-    console.log(data)})
-
+    this.lec = data;
+    this.columnHeaders = ['Days', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    console.log(data);
+    });
   }
 
 }
