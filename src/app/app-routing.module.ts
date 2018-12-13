@@ -6,6 +6,7 @@ import { SignUpComponent } from './User_Authentication/sign-up/sign-up.component
 import { ForgotPasswordComponent } from './User_Authentication/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
 import { StudentRoutingModule } from './student/student-routing.module';
+import { StaffRoutingModule } from './staff/staff-routing.module';
 
 const routes: Routes = [
   { path: 'forgot-password',
@@ -24,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), StudentRoutingModule],
+  imports: [RouterModule.forRoot(routes), StudentRoutingModule, StaffRoutingModule],
   exports: [RouterModule]
 })
 
