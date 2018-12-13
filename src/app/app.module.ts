@@ -1,3 +1,5 @@
+import { StaffModule } from './staff/staff.module';
+import { StaffRoutingModule } from './staff/staff-routing.module';
 import { StudentRoutingModule } from './student/student-routing.module';
 import { StudentModule } from './student/student.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,7 +31,7 @@ import { ResetPasswordComponent } from './User_Authentication/reset-password/res
     StudentModule,
     FormsModule,
     HttpClientModule,
-    StudentRoutingModule
+    StaffModule
   ],
   providers: [],
   bootstrap: [AppComponent]
