@@ -36,9 +36,8 @@ import { BarchartComponent } from './../miscellaneous/barchart/barchart.componen
     AboutComponent,
     TimetableComponent,
     SidenavigationComponent,
-    BarchartComponent,
-    CalendarComponent
+    BarchartComponent
   ],
-  providers: [BarchartComponent, CalendarComponent]
+  providers: [BarchartComponent]
 })
 export class StudentModule { }
