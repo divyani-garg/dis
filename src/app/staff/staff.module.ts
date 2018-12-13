@@ -20,6 +20,18 @@ import { NavigationComponent } from './navigation/navigation.component';
     CommonModule,
     StaffRoutingModule
   ],
-  declarations: [HomeComponent, AboutComponent, LabsComponent, AttendanceComponent, StudentsComponent, DocumentsComponent, ComplaintsComponent, AlertsComponent, ProfileComponent, StaffComponent, SidenavigationComponent, NavigationComponent]
+  declarations: [
+    HomeComponent,
+    AboutComponent,
+    LabsComponent,
+    AttendanceComponent,
+    StudentsComponent,
+    DocumentsComponent,
+    ComplaintsComponent,
+    AlertsComponent,
+    ProfileComponent,
+    StaffComponent,
+    SidenavigationComponent,
+    NavigationComponent]
 })
 export class StaffModule { }
