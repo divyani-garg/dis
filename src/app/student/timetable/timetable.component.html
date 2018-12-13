@@ -33,23 +33,25 @@
       <table class="table table-bordered " id="tt" >
         <thead>
           <tr>
-            <td colspan="3">Days</td>
-            <td colspan="3">Monday</td>
-            <td colspan="3">Tuesday</td>
-            <td colspan="3">Wednesday</td>
-            <td colspan="3">Thursday</td>
-            <td colspan="3">Friday</td>
+            <td colspan="1">Days</td>
+            <td colspan="1">Monday</td>
+            <td colspan="1">Tuesday</td>
+            <td colspan="1">Wednesday</td>
+            <td colspan="1">Thursday</td>
+            <td colspan="1">Friday</td>
           </tr>
         </thead>
 
         <tbody>
-          <ng-container *ngFor = "let col of columnHeaders">
-          <tr *ngFor= "let data of lec">
-            <td *ngIf="data.day===col">
-              {{data.subjectCode}}
-            </td>
+          <tr *ngFor = "let timeslot of schedule">
+            <ng-container *ngFor= "let lectures of timeslot">
+              <ng-container *ngFor= "let lecture of lectures">
+                <td>
+                  {{lecture}}
+                </td>
+              </ng-container>
+            </ng-container>
           </tr>
-          </ng-container>
         </tbody>
       </table>
     </div>
