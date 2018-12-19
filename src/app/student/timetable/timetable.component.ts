@@ -45,9 +45,16 @@ export class TimetableComponent implements OnInit {
           if ( this.lec[j].from === this.timeslots[i] && k === 0 && this.lec[j].type !== 'Lab') {
             this.lectures = [String(this.lec[j].from) + '-' + String(this.lec[j].to)];
           } else if (this.lec[j].from === this.timeslots[i] && this.lec[j].day === this.columnHeaders[k].day) {
-            if (!(this.lectures.includes(this.lec[j]))) {
+            var flag = 0;
+            for (let l = 0; l < this.lectures.length; l++) {
               // tslint:disable-next-line:max-line-length
-                this.lectures.push(this.lec[j]);
+              if (this.lec[j].subjectCode === this.lectures[l].subjectCode && this.lec[j].location === this.lectures[l].location) {
+                flag = 1;
+                this.lectures[l].batch = [this.lectures[l].batch, this.lec[j].batch];
+              }
+            }
+            if (flag === 0) {
+              this.lectures.push(this.lec[j]);
             }
           }
         }

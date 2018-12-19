@@ -33,9 +33,9 @@
       <table class="table table-bordered " id="tt" >
         <thead>
           <tr >
-
-            <th *ngFor="let val of columnHeaders" [attr.colspan]="4">{{val?.day}} </th>
-
+            <ng-container *ngFor="let val of columnHeaders">
+              <th [attr.colspan] = "val.colspanValue">{{val?.day}} </th>
+            </ng-container>
           </tr>
         </thead>
 
@@ -45,7 +45,7 @@
 
               <ng-container *ngFor= "let lecture of lectures">
 
-                <td *ngIf = isString(lecture) colspan="4">
+                <td *ngIf = isString(lecture) colspan="1">
                   {{lecture}}
                 </td>
                 <td [attr.colspan] = "columnHeaders[timeslot.indexOf(lectures)].colspanValue-lectures.length+1" [attr.rowspan] = "lecture.type === 'Lab'? 2 : 1" *ngIf = isObject(lecture)>
