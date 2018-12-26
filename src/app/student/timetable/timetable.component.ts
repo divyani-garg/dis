@@ -30,21 +30,46 @@ export class TimetableComponent implements OnInit {
     this.timeslots = [];
     console.log(data);
     this.schedule = [];
+    var start_time = '24:00:00';
+    var end_time = '00:00:00';
+    var got_duration = true;
+    var duration = 1000;
+    var calc_duration = 0;
     for (let a = 0; a < this.lec.length; a++) {
-      if (!(this.timeslots.includes(this.lec[a].from))) {
-        this.timeslots.push(this.lec[a].from);
+      if (this.lec[a].type === 'Lecture') {
+        // tslint:disable-next-line:max-line-length
+        calc_duration = this.convertedTime(this.lec[a].to) - this.convertedTime(this.lec[a].from);
+        if (calc_duration < duration) {
+          duration = calc_duration;
+        }
+      }
+      // tslint:disable-next-line:max-line-length
+      if (this.convertedTime(this.lec[a].from) < this.convertedTime(start_time)) {
+        start_time = this.lec[a].from;
+      }
+      // tslint:disable-next-line:max-line-length
+      if (this.convertedTime(this.lec[a].to) > this.convertedTime(end_time)) {
+        end_time = this.lec[a].to;
       }
     }
-    console.log(this.timeslots.sort((n1, n2) => {
-      return this.tsort(n1, n2); }));
+    var lecture_start = start_time;
+    var lecture_end = start_time;
+    while (lecture_start !== end_time) {
+      lecture_end = this.addTimes(lecture_start, duration);
+      this.timeslots.push([lecture_start, lecture_end]);
+      lecture_start = lecture_end;
+    }
+
+
+    console.log(this.timeslots);
     for (let i = 0; i < this.timeslots.length; i++) {
       this.dayschedule = [];
       for (let k = 0; k < this.columnHeaders.length; k++) {
         this.lectures = [];
         for (let j = 0; j < this.lec.length; j++) {
-          if ( this.lec[j].from === this.timeslots[i] && k === 0 && this.lec[j].type !== 'Lab') {
-            this.lectures = [String(this.lec[j].from) + '-' + String(this.lec[j].to)];
-          } else if (this.lec[j].from === this.timeslots[i] && this.lec[j].day === this.columnHeaders[k].day) {
+          if (k === 0) {
+            this.lectures = [String(this.timeslots[i][0]) + '-' + String(this.timeslots[i][1])];
+          } else if (this.lec[j].from === this.timeslots[i][0] && this.lec[j].day === this.columnHeaders[k].day) {
             var flag = 0;
             for (let l = 0; l < this.lectures.length; l++) {
               // tslint:disable-next-line:max-line-length
@@ -66,7 +91,22 @@ export class TimetableComponent implements OnInit {
       this.schedule.push(this.dayschedule);
     }
     console.log(this.schedule);
-    console.log(this.columnHeaders);
+    for (let i = 0; i < this.schedule.length; i++) {
+      for (let j = 0; j < this.schedule[i].length; j++) {
+        var check = 0;
+        for (let k = 0; k < this.schedule[i][j].length; k++) {
+          if ( this.schedule[i][j][k] !== null && this.schedule[i][j][k].type === 'Lab') {
+            check = 1;
+            break;
+          }
+        }
+        if (check === 1) {
+          this.schedule[i + 1][j].push(null);
+        }
+      }
+    }
+    console.log(this.schedule);
+
     });
   }
 
@@ -96,5 +136,29 @@ export class TimetableComponent implements OnInit {
 
  isString(val) {
    return typeof val === 'string';
+ }
+
+ addTimes(time1, duration) {
+  var hh = Number(time1.slice(0, 2));
+  var mm = Number(time1.slice(3, 5));
+  mm = mm + duration;
+  if (mm >= 60) {
+    mm = mm - 60;
+    hh += 1;
+    if (hh > 12) {
+      hh -= 12;
+    }
+  }
+  return ((hh < 10) ? '0' + String(hh) : String(hh)) + ':' + ((mm === 0) ? '00' : String(mm)) + ':00';
+ }
+
+ convertedTime(time) {
+  var hh = Number(time.slice(0, 2));
+  var mm = Number(time.slice(3, 5));
+  if (hh < 7) {
+    return ((hh + 12) * 60 + mm);
+  } else {
+    return (hh * 60 + mm);
+  }
  }
 }

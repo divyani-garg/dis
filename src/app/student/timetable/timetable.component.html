@@ -30,29 +30,31 @@
      <h3  class="heading" >Time Table</h3>
      <hr/>
     <div class="table-responsive">
-      <table class="table table-bordered " id="tt" >
+      <table class="table table-bordered " id="tt">
         <thead>
           <tr >
             <ng-container *ngFor="let val of columnHeaders">
-              <th [attr.colspan] = "val.colspanValue">{{val?.day}} </th>
+              <th [attr.colspan] = "2*val.colspanValue">{{val?.day}} </th>
             </ng-container>
           </tr>
         </thead>
 
         <tbody>
           <tr *ngFor = "let timeslot of schedule">
-            <ng-container *ngFor= "let lectures of timeslot">
-
+            <ng-container *ngFor= "let lectures of timeslot" style="position: relative;">
+              <td style="position: relative;" *ngIf="lectures.length===0" [attr.colspan] = "2*(columnHeaders[timeslot.indexOf(lectures)].colspanValue)"></td>
               <ng-container *ngFor= "let lecture of lectures">
+                <ng-container *ngIf = "lecture!==null">
+                  <td *ngIf = "isString(lecture)" colspan="2">
+                    {{lecture}}
+                  </td>
 
-                <td *ngIf = isString(lecture) colspan="1">
-                  {{lecture}}
-                </td>
-                <td [attr.colspan] = "columnHeaders[timeslot.indexOf(lectures)].colspanValue-lectures.length+1" [attr.rowspan] = "lecture.type === 'Lab'? 2 : 1" *ngIf = isObject(lecture)>
-                  {{lecture.subjectCode}}<br/>
-                  {{lecture?.batch}}<br/>
-                  {{lecture?.location}}
-                </td>
+                  <td style="position: relative;" *ngIf = "isObject(lecture)" [attr.colspan] = "2*(columnHeaders[timeslot.indexOf(lectures)].colspanValue)/lectures.length" [attr.rowspan] = "lecture.type === 'Lab'? 2 : 1">
+                    {{lecture?.subjectCode}}<br/>
+                    {{lecture?.batch}}<br/>
+                    {{lecture?.location}}
+                  </td>
+                </ng-container>
               </ng-container>
             </ng-container>
           </tr>

@@ -9,13 +9,19 @@ export class SemesterTimetable {
   to: Time;
   day: String;
   type: String;
-  faculty_1: String;
-  faculty_2: String;
-  faculty_3: String;
+  faculty1: String;
+  faculty2: String;
+  faculty3: String;
   ta: String;
   batch: String;
   location: String;
-  with_effect_from: Date;
-  pdf_id: String;
+  withEffectFrom: Date;
+  pdfId: String;
+  courseId: String;
+  createdBy: String;
+  createdDate: Date;
+  id: Number;
+  modifiedBy: String;
+  modifiedDate: String;
 }
 
