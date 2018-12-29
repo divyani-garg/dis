@@ -101,7 +101,13 @@ export class TimetableComponent implements OnInit {
           }
         }
         if (check === 1) {
-          this.schedule[i + 1][j].push(null);
+          for (let k = 0; k < this.schedule[i][j].length; k++) {
+            if ( this.schedule[i][j][k] !== null && this.schedule[i][j][k].type === 'Lab') {
+              this.schedule[i + 1][j].push(null);
+            } else {
+              this.schedule[i + 1][j].push([]);
+          }
+          }
         }
       }
     }

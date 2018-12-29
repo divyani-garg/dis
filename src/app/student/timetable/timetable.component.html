@@ -42,7 +42,7 @@
         <tbody>
           <tr *ngFor = "let timeslot of schedule">
             <ng-container *ngFor= "let lectures of timeslot" style="position: relative;">
-              <td style="position: relative;" *ngIf="lectures.length===0" [attr.colspan] = "2*(columnHeaders[timeslot.indexOf(lectures)].colspanValue)"></td>
+              <td style="position: relative ;" *ngIf="lectures.length===0" [attr.colspan] = "2*(columnHeaders[timeslot.indexOf(lectures)].colspanValue)"></td>
               <ng-container *ngFor= "let lecture of lectures">
                 <ng-container *ngIf = "lecture!==null">
                   <td *ngIf = "isString(lecture)" colspan="2">
@@ -53,6 +53,7 @@
                     {{lecture?.subjectCode}}<br/>
                     {{lecture?.batch}}<br/>
                     {{lecture?.location}}
+
                   </td>
                 </ng-container>
               </ng-container>
