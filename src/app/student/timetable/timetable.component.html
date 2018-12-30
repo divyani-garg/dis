@@ -8,11 +8,9 @@
     <div>
       <h5 class="heading">Download Syllabus</h5>
       <hr/>
-      <h6><a href="#" style="text-decoration:none;">CO34007 Computer Networks</a></h6>
-      <h6><a href="#" style="text-decoration:none;">CO34002 Theory of Computation</a></h6>
-      <h6><a href="#" style="text-decoration:none;">CO34008 Object Oriented Software Engineering</a></h6>
-      <h6><a href="#" style="text-decoration:none;">CO34005 Database Management System</a></h6>
-      <h6><a href="#" style="text-decoration:none;">EC34013 Introduction to Microprocessors</a></h6>
+      <div *ngFor="let subject of mySubjects">
+        <h6><a href= {{subject?.subSyllabus}} style="text-decoration:none;">{{subject?.subCode}} :  {{subject?.subName}}</a></h6>
+      </div>
   </div>
 
       </div>

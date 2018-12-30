@@ -1,3 +1,4 @@
+import { SemesterSubjectsService } from './../../API_Service/SemesterSubjectsService';
 import { Component, OnInit, Input } from '@angular/core';
 import { SemesterTimetable } from '../../Model/semester-timetable.model';
 import { TimetableService } from '../../API_Service/timetable.service';
@@ -20,7 +21,9 @@ export class TimetableComponent implements OnInit {
   lectures: any[];
   timeslots: any[];
 
-  constructor(private timetable: TimetableService) { }
+  mySubjects: any[];
+
+  constructor(private timetable: TimetableService, private semSubjects: SemesterSubjectsService) { }
   ngOnInit() {
     this.tt = this.timetable.getTimetable()
     .subscribe( data => {
@@ -114,6 +117,9 @@ export class TimetableComponent implements OnInit {
     console.log(this.schedule);
 
     });
+
+
+    this.mySubjects = this.semSubjects.getSyllabusPdf();
   }
 
   tconv(n1) {
@@ -167,4 +173,5 @@ export class TimetableComponent implements OnInit {
     return (hh * 60 + mm);
   }
  }
+
 }
