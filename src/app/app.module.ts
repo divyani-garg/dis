@@ -14,6 +14,8 @@ import { LoginComponent } from './User_Authentication/login/login.component';
 import { SignUpComponent } from './User_Authentication/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './User_Authentication/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
+import { FacultyModule } from './faculty/faculty.module';
+import { AboutModule} from './faculty/about/about.module'
 
 
 @NgModule({
@@ -23,15 +25,17 @@ import { ResetPasswordComponent } from './User_Authentication/reset-password/res
     LoginComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent
-  ],
+    ResetPasswordComponent,
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StudentModule,
     FormsModule,
     HttpClientModule,
-    StaffModule
+    StaffModule,
+    FacultyModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
