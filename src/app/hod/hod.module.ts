@@ -7,19 +7,21 @@ import { AdministrationComponent } from './administration/administration.compone
 import { TimetableComponent } from './timetable/timetable.component';
 import { FacultyComponent } from './faculty/faculty.component';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
-import { StudentComponent } from './student/student.component';
-import { DocumentsComponent } from './documents/documents.component';
 import { RequestsComponent } from './requests/requests.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HodComponent } from './hod/hod.component';
 import { SidenavigationComponent } from './sidenavigation/sidenavigation.component';
 import { CalendarComponent } from '../miscellaneous/calendar/calendar.component';
+import { HodStudentModule } from './hod-student/hod-student.module';
+import { DocumentsModule } from './documents/documents.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    HodRoutingModule
+    HodRoutingModule,
+    HodStudentModule,
+    DocumentsModule
   ],
   declarations: [
      HomeComponent,
@@ -27,14 +29,16 @@ import { CalendarComponent } from '../miscellaneous/calendar/calendar.component'
      TimetableComponent, 
      FacultyComponent, 
      InfrastructureComponent,
-     StudentComponent, 
-     DocumentsComponent, 
      RequestsComponent, 
      AlertsComponent, 
      NavigationComponent, 
      HodComponent, 
      SidenavigationComponent,
      CalendarComponent],
-     providers: [CalendarComponent]
+     providers: [CalendarComponent],
+     exports:[
+       NavigationComponent
+     ]
+ 
 })
 export class HodModule { }

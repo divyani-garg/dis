@@ -16,6 +16,8 @@ import { HodRoutingModule } from './hod/hod-routing.module';
 import { HodModule } from './hod/hod.module';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +25,8 @@ import { HodModule } from './hod/hod.module';
     LoginComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent
-  ],
+    ResetPasswordComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

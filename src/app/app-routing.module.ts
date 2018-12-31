@@ -8,6 +8,7 @@ import { ResetPasswordComponent } from './User_Authentication/reset-password/res
 import { StudentRoutingModule } from './student/student-routing.module';
 import { HodRoutingModule } from './hod/hod-routing.module';
 
+
 const routes: Routes = [
   { path: 'forgot-password',
      component: ForgotPasswordComponent
