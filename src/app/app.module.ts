@@ -35,7 +35,7 @@ import { AboutModule} from './faculty/about/about.module'
     HttpClientModule,
     StaffModule,
     FacultyModule,
-    AboutModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
