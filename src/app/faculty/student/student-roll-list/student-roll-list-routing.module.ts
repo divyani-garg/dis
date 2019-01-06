@@ -15,6 +15,10 @@ const routes: Routes = [
         {
           path : '',
           component : StudentRollListComponent
+        },
+        {
+          path : 'student_roll_list',
+          component : StudentRollListComponent
         }
       ]
     }

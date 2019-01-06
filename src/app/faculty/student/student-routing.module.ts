@@ -4,7 +4,7 @@ import { FacultyComponent } from '../faculty/faculty.component';
 import { StudentFourthYearProjectComponent } from './student-fourth-year-project/student-fourth-year-project.component';
 import { MeProjectDetailsComponent } from './me-project-details/me-project-details.component';
 import { MeSchlorshipDetailsComponent } from './me-schlorship-details/me-schlorship-details.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { NavigationComponent } from './student-roll-list/navigation/navigation.component';
 import { StudentComponent } from './student/student.component';
 import { StudentRollListComponent } from './student-roll-list/student-roll-list/student-roll-list.component';
 import { StudentRollListRoutingModule } from './student-roll-list/student-roll-list-routing.module';
@@ -19,10 +19,6 @@ const routes: Routes = [
         component : StudentComponent,
         children:[
           {
-            path  : '',
-            component : StudentRollListComponent
-          },
-          {
             path : 'student_fourth_year_project',
             component : StudentFourthYearProjectComponent
           },
@@ -33,16 +29,12 @@ const routes: Routes = [
           {
             path  : 'me_schlorship_details',
             component : MeSchlorshipDetailsComponent
-          },
-          {
-            path :'navigation',
-            component : NavigationComponent
           }
         ]
       }
     ]
-    }    
-  ];      
+    }
+  ];
 @NgModule({
   imports: [RouterModule.forChild(routes),StudentRollListRoutingModule],
   exports: [RouterModule]

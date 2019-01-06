@@ -1,3 +1,4 @@
+import { NavigationComponent } from './navigation/navigation.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,9 +8,9 @@ import { StudentRollListComponent } from './student-roll-list/student-roll-list.
 @NgModule({
   imports: [
     CommonModule,
-    StudentRollListRoutingModule,
-    
+    StudentRollListRoutingModule
   ],
-  declarations: [StudentRollListComponent]
+  declarations: [StudentRollListComponent,NavigationComponent],
+  exports:[NavigationComponent]
 })
 export class StudentRollListModule { }
