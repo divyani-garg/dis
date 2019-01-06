@@ -39,7 +39,7 @@
     <!--Header Start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
       <div class="container nav">
-        <a class="navbar-brand" href="#"><img img src="assets/images/logo_small.png" alt="" /></a><span style="color:#fff; text-align:center; line-height:20px; font-family:'Nunito Sans', sans-serif;">Department
+        <a class="navbar-brand" routerLink="home"><img img src="assets/images/logo_small.png" alt="" /></a><span style="color:#fff; text-align:center; line-height:20px; font-family:'Nunito Sans', sans-serif;">Department
           of <br>Computer Engineering</span>
         <ul class="searchbox">
           <li class="">
@@ -55,18 +55,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item active">
-              <a class="nav-link" routerLink='home'><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active" style="margin-left:3%;">
+              <a class="nav-link" routerLink='home'><i class="fa fa-home" aria-hidden="true"></i> Home</a>
             </li>
-            <li class="nav-item" style="padding-right:1%;">
-              <a class="nav-link" routerLink='administration'><i class="fa fa-university" aria-hidden="true"></i>
-                Administration</a>
+            <li class="nav-item" style="margin-right:2%;">
+              <a class="nav-link" routerLink='administration'><i class="fa fa-university" aria-hidden="true"></i>Administration</a>
             </li>
-
+            <li class="nav-items" style="margin-left:1%;">
+              <a class="nav-link" routerLink='my_duties'><i class="fa fa-tasks" aria-hidden="true"></i>My Duties</a>
+            </li>  
 
             <li class="nav-item">
-              <a class="nav-link" routerLink='about'><i class="fa fa-home" aria-hidden="true"></i>
-                About</a>
+              <a class="nav-link" routerLink='about'><i class="fa fa-globe" aria-hidden="true"></i>About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink='attendance'><i class="fa fa-bar-chart-o" aria-hidden="true"></i>

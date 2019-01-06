@@ -2,39 +2,38 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FacultyComponent } from '../faculty/faculty.component';
 import { HomeComponent } from './home/home.component';
+import { FacultyhomeComponent } from './facultyhome/facultyhome.component';
 import { NotificationComponent } from './notification/notification.component';
-import { MyDutiesModule } from './my-duties/my-duties.module';
-import { HomeFacultyComponent } from './home-faculty/home-faculty.component';
 
 const routes: Routes = [
   {
     path : 'faculty',
     component : FacultyComponent,
-    children:[
+    children : [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+    children: [
       {
-        path : 'home',
-        component : HomeComponent,
-        children : [
-          {
-            path : '',
-            component : HomeFacultyComponent
-          },
-          {
-            path : 'home_faculty',
-            component : HomeFacultyComponent
-          },
-          {
-            path  : 'notification',
-            component : NotificationComponent
-          }
-        ]
+        path: '',
+        component: FacultyhomeComponent
+      },
+      {
+        path: 'notification',
+        component: NotificationComponent
       }
     ]
-  }
+  },
+]
+}
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes),MyDutiesModule],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class HomeRoutingModule { }

@@ -6,6 +6,8 @@ import { MeProjectDetailsComponent } from './me-project-details/me-project-detai
 import { MeSchlorshipDetailsComponent } from './me-schlorship-details/me-schlorship-details.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { StudentComponent } from './student/student.component';
+import { StudentRollListComponent } from './student-roll-list/student-roll-list/student-roll-list.component';
+import { StudentRollListRoutingModule } from './student-roll-list/student-roll-list-routing.module';
 
 const routes: Routes = [
   {
@@ -16,6 +18,10 @@ const routes: Routes = [
         path :'student',
         component : StudentComponent,
         children:[
+          {
+            path  : '',
+            component : StudentRollListComponent
+          },
           {
             path : 'student_fourth_year_project',
             component : StudentFourthYearProjectComponent
@@ -38,7 +44,7 @@ const routes: Routes = [
     }    
   ];      
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),StudentRollListRoutingModule],
   exports: [RouterModule]
 })
 export class StudentRoutingModule { }

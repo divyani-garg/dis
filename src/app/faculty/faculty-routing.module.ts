@@ -7,17 +7,26 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AboutRoutingModule } from './about/about-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { StudentRoutingModule } from './student/student-routing.module';
-import { HomeComponent } from './home/home/home.component';
-import { HomeRoutingModule } from './home/home-routing.module';
-import { ComplaintsComponent } from './complaints/complaints/complaints.component';
 import { ComplaintsRoutingModule } from './complaints/complaints-routing.module';
 import { DocumentsRoutingModule } from './documents/documents-routing.module';
+import { HomeRoutingModule } from './home/home-routing.module';
+import { HomeComponent } from './home/home/home.component';
+import { MydutiesComponent } from './myduties/myduties/myduties.component';
+import { MydutiesRoutingModule } from './myduties/myduties-routing.module';
 
 const routes: Routes = [
   {
     path : 'faculty',
     component : FacultyComponent,
     children : [
+      {
+        path : '',
+        component : HomeComponent
+      },
+      {
+        path : 'my_duties',
+        component : MydutiesComponent
+      },
       {
         path : 'attendance',
         component: AttendanceComponent
@@ -41,7 +50,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes),AboutRoutingModule,StudentRoutingModule,HomeRoutingModule,ComplaintsRoutingModule,DocumentsRoutingModule],
+  imports: [RouterModule.forChild(routes),AboutRoutingModule,HomeRoutingModule,StudentRoutingModule,
+    ComplaintsRoutingModule,DocumentsRoutingModule,MydutiesRoutingModule],
   exports: [RouterModule]
 })
 export class FacultyRoutingModule { }

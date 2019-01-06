@@ -7,11 +7,13 @@ import { MeProjectDetailsComponent } from './me-project-details/me-project-detai
 import { MeSchlorshipDetailsComponent } from './me-schlorship-details/me-schlorship-details.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { StudentComponent } from './student/student.component';
+import { StudentRollListModule } from './student-roll-list/student-roll-list.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    StudentRoutingModule
+    StudentRoutingModule,
+    StudentRollListModule
   ],
   declarations: [StudentFourthYearProjectComponent, MeProjectDetailsComponent, MeSchlorshipDetailsComponent, NavigationComponent, StudentComponent]
 })
