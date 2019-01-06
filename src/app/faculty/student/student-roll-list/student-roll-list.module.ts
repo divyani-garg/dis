@@ -7,7 +7,8 @@ import { StudentRollListComponent } from './student-roll-list/student-roll-list.
 @NgModule({
   imports: [
     CommonModule,
-    StudentRollListRoutingModule
+    StudentRollListRoutingModule,
+    
   ],
   declarations: [StudentRollListComponent]
 })

@@ -40,3 +40,13 @@
   a{
     text-decoration: none;
   }
+  .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+    background-color: black;
+    color:yellow;
+    }
+  .subjectandFacultyBackground{
+    background:#726F6F;
+    padding: 3%;
+    color:white;
+    width : 100%;
+  }  
