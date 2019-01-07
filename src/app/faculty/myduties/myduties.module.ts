@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { MydutiesRoutingModule } from './myduties-routing.module';
 import { MydutiesComponent } from './myduties/myduties.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ExpertlectureComponent } from './expertlecture/expertlecture.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   imports: [
@@ -11,6 +13,6 @@ import { NavigationComponent } from './navigation/navigation.component';
     MydutiesRoutingModule,
   
   ],
-  declarations: [MydutiesComponent, NavigationComponent]
+  declarations: [MydutiesComponent, NavigationComponent, ExpertlectureComponent, ProfileComponent]
 })
 export class MydutiesModule { }
