@@ -1,75 +1,81 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 kyc-colm user-management">
+     <div class="col-lg-12 kyc-colm user-management">
             <div class="kyc-section rewards-section reports-sectn">
-                <ul class="nav nav-pills mb-3 nav-fill" id='myduties-pills-tabs' role="tablist">
+       
+    <div class="row">
+        <div class="col-lg-3 kyc-colm user-management" style="border-right:1px solid #ADAAAA;">
+                            <ul class="nav flex-column nav-pills" id='myduties-pills-tabs' role="tablist" aria-orientation="vertical">
                     <li class="nav-item">
                         <a class="nav-link active" data-toggle="pill" href="#myduties-classtimetable"><i class="fa fa-calendar fa-fw"
                                 aria-hidden="true"></i> Class Time Table</a>
+                        <br>        
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" data-toggle="pill" href="#myduties-industrialvisit"><i class="fa fa-industry fa-fw"
-                                aria-hidden="true"></i> Industrial Visit</a>
+                                aria-hidden="true"></i> Industrial Visit</a><br>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="pill" href="#myduties-quiztimetable"><i class="fa fa-calendar fa-fw"
-                                aria-hidden="true"></i> Quiz Time Table</a>
+                                aria-hidden="true"></i> Quiz Time Table</a><br>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="pill" href="#myduties-expertlecture"><i class="fa fa-users fa-fw"
-                                aria-hidden="true"></i> Expert Lecture</a>
+                                aria-hidden="true"></i> Expert Lecture</a><br>
                     </li>
                     <li>
                         <a class="nav-link" data-toggle="pill" href="#myduties-midtermtimetable"><i class="fa fa-calendar fa-fw"
-                                aria-hidden="true"></i> Midterm Time Table</a>
+                                aria-hidden="true"></i> Midterm Time Table</a><br>
                     </li>
                     <li>
                         <a class="nav-link" data-toggle="pill" href="#myduties-markattendance"><i class="fa fa-check fa-fw"
-                                aria-hidden="true"></i> Mark Attendance</a>
+                                aria-hidden="true"></i> Mark Attendance</a><br>
                     </li>
                     <li>
                         <a class="nav-link" data-toggle="pill" href="#myduties-librarymanagement"><i class="fa fa-book fa-fw"
-                                aria-hidden="true"></i> Library Management</a>
+                                aria-hidden="true"></i> Library Management</a><br>
                     </li>
 
-                    <li style="margin-left:8%;">
-                        <br>
+                    <li>
+                        
                         <a class="nav-link" data-toggle="pill" href="#myduties-computerclubmanagement"><i class="fa fa-laptop fa-fw"
                                 aria-hidden="true"></i>
-                            Computer Club Management</a>
+                            Computer Club Management</a><br>
                     </li>
                     <li>
-                        <br>
+                        
                         <a class="nav-link" data-toggle="pill" href="#myduties-magazinemanagement"><i class="fa fa-folder-open fa-fw"
                                 aria-hidden="true"></i>
-                            Magazine Management</a>
+                            Magazine Management</a><br>
                     </li>
-                    <li><br>
+                    <li>
                         <a class="nav-link" data-toggle="pill" href="#myduties-projectguideallotment"><i class="fa fa-product-hunt fa-fw"
                                 aria-hidden="true"></i>
-                            Project Guide Allotment </a>
+                            Project Guide Allotment </a><br>
                     </li>
-                    <li><br>
+                    <li>
                         <a class="nav-link" data-toggle="pill" href="#myduties-salarybills"><i class="fa fa-archive fa-fw"
                                 aria-hidden="true"></i>
-                            Salary Bills </a>
+                            Salary Bills </a><br>
                     </li>
-                    <li><br>
+                    <li>
                         <a class="nav-link" data-toggle="pill" href="#myduties-practicaltimetable"><i class="fa fa-calendar fa-fw"
                                 aria-hidden="true"></i>
-                            Practical Time Table </a>
+                            Practical Time Table </a><br>
                     </li>
                 </ul>
-                <hr>
+            </div>
+        
+            <div class="col-lg-9">
                 <!--Tab Panes start-->
                 <div class="tab-content" id="myduties-pills-tabs">
                     <!--Class time table start-->
                     <div id='myduties-classtimetable' class="tab-pane active">
-                        <div class="container">
                             <div class="row">
-                                <h5 class="text-center">Class Time Table</h5>
+                                <h4 style="color:#f46404;padding-left:2%;">Class Time Table</h4>
+                                
                             </div>
-                            <br>
+                            <hr>
                             <div class="row">
                                 <div class="col-lg-8">
                                     <ul class="nav nav-pills mb-3 nav-fill" id='ugpg' role="tablist">
@@ -271,7 +277,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
 
                     </div>
                     <!--Class time table ends-->
@@ -951,10 +957,10 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="row">
-                                            <div class="col-lg-7">
-                                                <h5>B.E 1st Year Attendance</h5>
-                                            </div>
                                             <div class="col-lg-5">
+                                                <h6>B.E 1st Year Attendance</h6>
+                                            </div>
+                                            <div class="col-lg-7">
                                                 <input class="form-control mr-sm-2 searchbox-width" type="search"
                                                     placeholder="Search" aria-label="Search">
                                             </div>
@@ -1056,7 +1062,7 @@
                                         <label style="margin-left:2%">To :
                                             <input class="form-control"  type="date">
                                         </label>
-                                        <button class="btn btn-primary" style="margin-left:5%;margin-bottom:4%;width: 100px;">Search</button>
+                                        <button class="btn btn-primary" style="width: 100px;">Search</button>
                                         <p class="text-center">OR</p>
                                         <select class="form-control">
                                             <option>Select Month</option>
@@ -1118,10 +1124,10 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="row">
-                                            <div class="col-lg-7">
-                                               <h5> B.E 1st Year Attendance</h5>
+                                            <div class="col-lg-6">
+                                               <h6> B.E 1st Year Attendance</h6>
                                             </div>
-                                            <div class="col-lg-5">
+                                            <div class="col-lg-6">
                                                 <input class="form-control mr-sm-2 searchbox-width" type="search"
                                                     placeholder="Search" aria-label="Search">
                                             </div>
@@ -1248,4 +1254,6 @@
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
