@@ -19,11 +19,7 @@ const routes: Routes = [
         children : [
           {
             path : '',
-            component : ComplaintsViewComponent
-          },
-          {
-            path : 'complaints_view',
-            component : ComplaintsViewComponent 
+            component : RemainingComplaintsComponent
           },
           {
             path : 'remaining_complaints',
