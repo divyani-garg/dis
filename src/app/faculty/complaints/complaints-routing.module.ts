@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FacultyComponent } from '../faculty/faculty.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
-import { ComplaintsViewComponent } from './complaints-view/complaints-view.component';
 import { RemainingComplaintsComponent } from './remaining-complaints/remaining-complaints.component';
 import { TotalComplaintsComponent } from './total-complaints/total-complaints.component';
 import { ResolvedComplaintsComponent } from './resolved-complaints/resolved-complaints.component';
