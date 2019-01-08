@@ -13,10 +13,10 @@ import { StudentModule } from '../faculty/student/student.module';
 import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
 import { ComplaintsModule } from './complaints/complaints.module';
-import { DocumentsModule } from './documents/documents.module';
 import { SidenavigationComponent } from '../faculty/sidenavigation/sidenavigation.component';
 import { MydutiesModule } from './myduties/myduties.module';
 import { StudentRollListModule } from './student/student-roll-list/student-roll-list.module';
+import { DocumentsComponent } from './documents/documents.component';
 
 @NgModule({
   imports: [
@@ -28,11 +28,10 @@ import { StudentRollListModule } from './student/student-roll-list/student-roll-
     StudentModule,
     HomeModule,
     ComplaintsModule,
-    DocumentsModule,
     MydutiesModule,
    ],
   declarations: [AttendanceComponent, AlertsComponent, NavigationComponent, 
-    FacultyComponent, PageNotFoundComponent,SidenavigationComponent
+    FacultyComponent, PageNotFoundComponent,SidenavigationComponent, DocumentsComponent
     ] 
 })
 export class FacultyModule { }

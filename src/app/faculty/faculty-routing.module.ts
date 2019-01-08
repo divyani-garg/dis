@@ -8,11 +8,11 @@ import { AboutRoutingModule } from './about/about-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { StudentRoutingModule } from './student/student-routing.module';
 import { ComplaintsRoutingModule } from './complaints/complaints-routing.module';
-import { DocumentsRoutingModule } from './documents/documents-routing.module';
 import { HomeRoutingModule } from './home/home-routing.module';
 import { HomeComponent } from './home/home/home.component';
 import { MydutiesComponent } from './myduties/myduties/myduties.component';
 import { MydutiesRoutingModule } from './myduties/myduties-routing.module';
+import { DocumentsComponent } from './documents/documents.component';
 
 const routes: Routes = [
   {
@@ -40,6 +40,10 @@ const routes: Routes = [
         component : NavigationComponent
       },
       {
+        path : 'documents',
+        component : DocumentsComponent
+      },
+      {
         path : '**',
         component : PageNotFoundComponent
 
@@ -51,7 +55,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes),AboutRoutingModule,HomeRoutingModule,StudentRoutingModule,
-    ComplaintsRoutingModule,DocumentsRoutingModule,MydutiesRoutingModule],
+    ComplaintsRoutingModule,MydutiesRoutingModule],
   exports: [RouterModule]
 })
 export class FacultyRoutingModule { }
