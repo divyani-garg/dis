@@ -7,13 +7,14 @@ import { ResolvedComplaintsComponent } from './resolved-complaints/resolved-comp
 import { RemainingComplaintsComponent } from './remaining-complaints/remaining-complaints.component';
 import { SideNavigationComponent } from './side-navigation/side-navigation.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
-import { ComplaintsViewComponent } from './complaints-view/complaints-view.component';
+import { AddacomplaintComponent } from './addacomplaint/addacomplaint.component';
 
 @NgModule({
   imports: [
     CommonModule,
     ComplaintsRoutingModule
   ],
-  declarations: [TotalComplaintsComponent, ResolvedComplaintsComponent, RemainingComplaintsComponent, SideNavigationComponent, ComplaintsComponent, ComplaintsViewComponent]
+  declarations: [TotalComplaintsComponent, ResolvedComplaintsComponent, RemainingComplaintsComponent, 
+    SideNavigationComponent, ComplaintsComponent, AddacomplaintComponent]
 })
 export class ComplaintsModule { }
