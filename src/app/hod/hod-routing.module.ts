@@ -9,6 +9,7 @@ import { TimetableComponent } from './timetable/timetable.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { StudentComponent } from './student/student.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { InfrastructureComponent } from './hod-infrastucture/infrastructure/infrastructure.component';
 const routes: Routes = [
   { path: 'hod',
     component: HodComponent,
@@ -36,6 +37,10 @@ const routes: Routes = [
       {
         path: 'faculty',
         component: FacultyComponent
+      },
+      {
+        path: 'infrastructure',
+        component: InfrastructureComponent
       },
       {
         path: 'requests',

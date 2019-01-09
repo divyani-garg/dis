@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { AdministrationComponent } from './administration/administration.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { FacultyComponent } from './faculty/faculty.component';
-import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { RequestsComponent } from './requests/requests.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -15,18 +14,19 @@ import { SidenavigationComponent } from './sidenavigation/sidenavigation.compone
 import { CalendarComponent } from '../miscellaneous/calendar/calendar.component';
 import { StudentComponent } from './student/student.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { HodInfrastuctureModule } from './hod-infrastucture/hod-infrastucture.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    HodRoutingModule
+    HodRoutingModule,
+    HodInfrastuctureModule
   ],
   declarations: [
      HomeComponent,
      AdministrationComponent, 
      TimetableComponent, 
      FacultyComponent, 
-     InfrastructureComponent,
      RequestsComponent, 
      AlertsComponent, 
      NavigationComponent, 

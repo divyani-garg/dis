@@ -1,0 +1,498 @@
+
+
+<script>
+  $(document).ready(function(){
+    $('#myTable').dataTable();
+  });
+</script> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" >Labs <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-target="#lab" href="#lab">Classrooms</a>
+            </li>
+            <li class="nav-item pl-4">
+                <a class="nav-link" href="#">Seminarhall</a>
+            </li>
+           <li class="nav-item pl-4"> 
+               <a class="nav-link" routerLink="Cinventory">Inventory</a>
+           </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<div class="container kyc-section rewards-section reports-sectn">
+    <div class="row">
+  
+              <div class="col-lg-12 kyc-colm user-management">
+  
+            <div class ="pt-2">
+                <h4>Labs</h4>
+                <hr>
+                <div class="row">
+                        <div class="col-lg-4">
+                          <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                          <div class="inline-block">
+                            <h3>GCL Lab
+                              <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                  <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                </a>
+                                <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item collapsed" routerLink="timetable" role="button" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                  <a class="dropdown-item collapsed" href="#" role="button" style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                </div>
+                              </span></h3>
+                          </div>
+                          <hr>
+                          <div>
+                            <p>Location: 2nd floor<br/>
+                            Incharge: Mr. Sudhir Anvekar<br/>
+                            Contact: 1234567890<br/>
+                            Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                            Operating Systems: CentOS, Ubuntu</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col-lg-4">
+                          <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                          <div class="inline-block">
+                            <h3>CNDC Lab
+                              <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                  <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                </a>
+                                <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#cleanliness" aria-expanded="false" aria-controls="cleanliness" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#equipments" aria-expanded="false" aria-controls="equipments" style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                </div>
+                              </span></h3>
+                          </div>
+                          <hr>
+                          <div>
+                            <p>Location: 2nd floor<br/>
+                            Incharge: Mr. Sudhir Anvekar<br/>
+                            Contact: 1234567890<br/>
+                            Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                            Operating Systems: CentOS, Ubuntu</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col-lg-4">
+                          <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                          <div class="inline-block">
+                            <h3>PG Lab
+                              <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                  <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                </a>
+                                <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item collapsed" routerLink="timetable" role="button" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                  <a class="dropdown-item collapsed" href="#" role="button" style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>   
+                                  <a class="dropdown-item collapsed" href="#" role="button" style="text-decoration:none;"><i class="fa fa-laptop" aria-hidden="true"> Information</i></a>                    
+                                </div>
+                              </span></h3>
+                          </div>
+                          <hr>
+                          <div>
+                            <p>Location: 2nd floor<br/>
+                            Incharge: Mr. Sudhir Anvekar<br/>
+                            Contact: 1234567890<br/>
+                            Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                            Operating Systems: CentOS, Ubuntu</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            <br>
+            <div class="row">
+                    <div class="col-lg-4">
+                        <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                        <div class="inline-block">
+                          <h3>HES Lab
+                            <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                              <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                              </a>
+                              <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                  <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                    
+                              </div>
+                            </span></h3>
+                        </div>
+                        <hr>
+                        <div>
+                          <p>Location: 2nd floor<br/>
+                          Incharge: Mr. Sudhir Anvekar<br/>
+                          Contact: 1234567890<br/>
+                          Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                          Operating Systems: CentOS, Ubuntu</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-lg-4">
+                        <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                        <div class="inline-block">
+                          <h3>SE Lab
+                            <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                              <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                              </a>
+                              <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                              </div>
+                            </span></h3>
+                        </div>
+                        <hr>
+                        <div>
+                          <p>Location: 2nd floor<br/>
+                          Incharge: Mr. Sudhir Anvekar<br/>
+                          Contact: 1234567890<br/>
+                          Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                          Operating Systems: CentOS, Ubuntu</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                            <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                            <div class="inline-block">
+                              <h3>SE Lab
+                                <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                  <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                    <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                  </a>
+                                  <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                  </div>
+                                </span></h3>
+                            </div>
+                            <hr>
+                            <div>
+                              <p>Location: 2nd floor<br/>
+                              Incharge: Mr. Sudhir Anvekar<br/>
+                              Contact: 1234567890<br/>
+                              Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                              Operating Systems: CentOS, Ubuntu</p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="row" style="margin-top: 20px;">
+                        <div class="col-lg-4">
+                            <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                            <div class="inline-block">
+                              <h3>HES Lab
+                                <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                  <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                    <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                  </a>
+                                  <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                      <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                      <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                    
+                                  </div>
+                                </span></h3>
+                            </div>
+                            <hr>
+                            <div>
+                              <p>Location: 2nd floor<br/>
+                              Incharge: Mr. Sudhir Anvekar<br/>
+                              Contact: 1234567890<br/>
+                              Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                              Operating Systems: CentOS, Ubuntu</p>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="col-lg-4">
+                            <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                            <div class="inline-block">
+                              <h3>SE Lab
+                                <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                  <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                    <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                  </a>
+                                  <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                  </div>
+                                </span></h3>
+                            </div>
+                            <hr>
+                            <div>
+                              <p>Location: 2nd floor<br/>
+                              Incharge: Mr. Sudhir Anvekar<br/>
+                              Contact: 1234567890<br/>
+                              Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                              Operating Systems: CentOS, Ubuntu</p>
+                            </div>
+                          </div>
+                        </div>
+    
+                
+                      </div>
+          </div>
+          <div class ="pt-4">
+                <h4>Classrooms</h4>
+                <hr>
+                <div class="row">
+                        <div class="col-lg-4">
+                          <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                          <div class="inline-block">
+                            <h3>GCL Lab
+                              <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                  <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                </a>
+                                <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#cleanliness" aria-expanded="false" aria-controls="cleanliness" style="text-decoration:none;"><i class="fa fa-calendar"> Time table</i></a>
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#equipments" aria-expanded="false" aria-controls="equipments" style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                </div>
+                              </span></h3>
+                          </div>
+                          <hr>
+                          <div>
+                            <p>Location: 2nd floor<br/>
+                            Incharge: Mr. Sudhir Anvekar<br/>
+                            Contact: 1234567890<br/>
+                            Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                            Operating Systems: CentOS, Ubuntu</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col-lg-4">
+                          <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                          <div class="inline-block">
+                            <h3>CNDC Lab
+                              <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                  <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                </a>
+                                <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#cleanliness" aria-expanded="false" aria-controls="cleanliness" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#equipments" aria-expanded="false" aria-controls="equipments" style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                </div>
+                              </span></h3>
+                          </div>
+                          <hr>
+                          <div>
+                            <p>Location: 2nd floor<br/>
+                            Incharge: Mr. Sudhir Anvekar<br/>
+                            Contact: 1234567890<br/>
+                            Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                            Operating Systems: CentOS, Ubuntu</p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col-lg-4">
+                          <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                          <div class="inline-block">
+                            <h3>PG Lab
+                              <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                  <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                </a>
+                                <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#cleanliness" aria-expanded="false" aria-controls="cleanliness" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                  <a class="dropdown-item collapsed" href="#" role="button" data-toggle="collapse" data-target="#equipments" aria-expanded="false" aria-controls="equipments" style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                </div>
+                              </span></h3>
+                          </div>
+                          <hr>
+                          <div>
+                            <p>Location: 2nd floor<br/>
+                            Incharge: Mr. Sudhir Anvekar<br/>
+                            Contact: 1234567890<br/>
+                            Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                            Operating Systems: CentOS, Ubuntu</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            <br>
+            <div class="row">
+                    <div class="col-lg-4">
+                        <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                        <div class="inline-block">
+                          <h3>HES Lab
+                            <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                              <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                              </a>
+                              <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                  <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                  <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                    
+                              </div>
+                            </span></h3>
+                        </div>
+                        <hr>
+                        <div>
+                          <p>Location: 2nd floor<br/>
+                          Incharge: Mr. Sudhir Anvekar<br/>
+                          Contact: 1234567890<br/>
+                          Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                          Operating Systems: CentOS, Ubuntu</p>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-lg-4">
+                        <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                        <div class="inline-block">
+                          <h3>SE Lab
+                            <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                              <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                              </a>
+                              <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>                     
+                                <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Inventory</i></a>                     
+                            </div>
+                            </span></h3>
+                        </div>
+                        <hr>
+                        <div>
+                          <p>Location: 2nd floor<br/>
+                          Incharge: Mr. Sudhir Anvekar<br/>
+                          Contact: 1234567890<br/>
+                          Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                          Operating Systems: CentOS, Ubuntu</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                            <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                            <div class="inline-block">
+                              <h3>SE Lab
+                                <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                  <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                    <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                  </a>
+                                  <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a> 
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-laptop fa-fw" aria-hidden="true"> I</i></a>                     
+                                  </div>
+                                </span></h3>
+                            </div>
+                            <hr>
+                            <div>
+                              <p>Location: 2nd floor<br/>
+                              Incharge: Mr. Sudhir Anvekar<br/>
+                              Contact: 1234567890<br/>
+                              Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                              Operating Systems: CentOS, Ubuntu</p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="row" style="margin-top: 20px;">
+                        <div class="col-lg-4">
+                            <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                            <div class="inline-block">
+                              <h3>HES Lab
+                                <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                  <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                    <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                  </a>
+                                  <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                      <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                      <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a>  
+                                      <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-laptop fa-fw" aria-hidden="true"> Inventory</i></a>                   
+                                  </div>
+                                </span></h3>
+                            </div>
+                            <hr>
+                            <div>
+                              <p>Location: 2nd floor<br/>
+                              Incharge: Mr. Sudhir Anvekar<br/>
+                              Contact: 1234567890<br/>
+                              Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                              Operating Systems: CentOS, Ubuntu</p>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="col-lg-4">
+                            <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                            <div class="inline-block">
+                              <h3>SE Lab
+                                <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                  <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                    <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                  </a>
+                                  <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a> 
+                                    <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-laptop fa-fw" aria-hidden="true"> Inventory</i></a>                     
+                                  </div>
+                                </span></h3>
+                            </div>
+                            <hr>
+                            <div>
+                              <p>Location: 2nd floor<br/>
+                              Incharge: Mr. Sudhir Anvekar<br/>
+                              Contact: 1234567890<br/>
+                              Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                              Operating Systems: CentOS, Ubuntu</p>
+                            </div>
+                          </div>
+                        </div>
+    
+                
+                      </div>
+          </div>
+          <div class ="pt-4">
+                        <h4 class="pt-4">Seminar Hall</h4>
+                        <hr>
+                    <div class="row">
+                            <div class="col-lg-4">
+                                    <div class="kyc-section rewards-section reports-sectn" style="background-color: rgb(208, 225, 245)">
+                                    <div class="inline-block">
+                                      <h3>AVLC
+                                        <span class="nav-item dropdown float-right" style="text-decoration: none;">
+                                          <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" style="text-decoration:none; position: relative; bottom:10px; left: 20px;">
+                                            <img src="assets/images/dotmenuimg.png" style="height: 40px; width: 40px;">
+                                          </a>
+                                          <div class="dropdown-menu rounded-0 " aria-labelledby="navbarDropdownMenuLink2" style="text-decoration: none;">
+                                            <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#timetable" style="text-decoration:none;"><i class="fa fa-calendar" aria-hidden="true"> Time table</i></a>
+                                            <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-info-circle" aria-hidden="true"> Information</i></a> 
+                                            <a class="dropdown-item" href="#" role="button" data-toggle="modal" data-target="#info"  style="text-decoration:none;"><i class="fa fa-laptop fa-fw" aria-hidden="true"> Inventory</i></a>                     
+                                          </div>
+                                        </span></h3>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                      <p>Location: 2nd floor<br/>
+                                      Incharge: Mr. Sudhir Anvekar<br/>
+                                      Contact: 1234567890<br/>
+                                      Subjects: Operating Systems, DBMS, Computer Architecture<br/>
+                                      Operating Systems: CentOS, Ubuntu</p>
+                                    </div>
+                                  </div>
+                                </div>
+                    </div>
+          </div>
+        </div>
+     
+    </div>
+</div>
