@@ -8,11 +8,9 @@
     <div>
       <h5 class="heading">Download Syllabus</h5>
       <hr/>
-      <h6><a href="#" style="text-decoration:none;">CO34007 Computer Networks</a></h6>
-      <h6><a href="#" style="text-decoration:none;">CO34002 Theory of Computation</a></h6>
-      <h6><a href="#" style="text-decoration:none;">CO34008 Object Oriented Software Engineering</a></h6>
-      <h6><a href="#" style="text-decoration:none;">CO34005 Database Management System</a></h6>
-      <h6><a href="#" style="text-decoration:none;">EC34013 Introduction to Microprocessors</a></h6>
+      <div *ngFor="let subject of mySubjects">
+        <h6><a href= {{subject?.subSyllabus}} style="text-decoration:none;">{{subject?.subCode}} :  {{subject?.subName}}</a></h6>
+      </div>
   </div>
 
       </div>
@@ -30,26 +28,35 @@
      <h3  class="heading" >Time Table</h3>
      <hr/>
     <div class="table-responsive">
-      <table class="table table-bordered " id="tt" >
+      <table class="table table-bordered " id="tt">
         <thead>
-          <tr>
-            <td colspan="3">Days</td>
-            <td colspan="3">Monday</td>
-            <td colspan="3">Tuesday</td>
-            <td colspan="3">Wednesday</td>
-            <td colspan="3">Thursday</td>
-            <td colspan="3">Friday</td>
+          <tr >
+            <ng-container *ngFor="let val of columnHeaders">
+              <th [attr.colspan] = "2*val.colspanValue">{{val?.day}} </th>
+            </ng-container>
           </tr>
         </thead>
 
         <tbody>
-          <ng-container *ngFor = "let col of columnHeaders">
-          <tr *ngFor= "let data of lec">
-            <td *ngIf="data.day===col">
-              {{data.subjectCode}}
-            </td>
+          <tr *ngFor = "let timeslot of schedule">
+            <ng-container *ngFor= "let lectures of timeslot" style="position: relative;">
+              <td style="position: relative ;" *ngIf="lectures.length===0" [attr.colspan] = "2*(columnHeaders[timeslot.indexOf(lectures)].colspanValue)"></td>
+              <ng-container *ngFor= "let lecture of lectures">
+                <ng-container *ngIf = "lecture!==null">
+                  <td *ngIf = "isString(lecture)" colspan="2">
+                    {{lecture}}
+                  </td>
+
+                  <td style="position: relative;" *ngIf = "isObject(lecture)" [attr.colspan] = "2*(columnHeaders[timeslot.indexOf(lectures)].colspanValue)/lectures.length" [attr.rowspan] = "lecture.type === 'Lab'? 2 : 1">
+                    {{lecture?.subjectCode}}<br/>
+                    {{lecture?.batch}}<br/>
+                    {{lecture?.location}}
+
+                  </td>
+                </ng-container>
+              </ng-container>
+            </ng-container>
           </tr>
-          </ng-container>
         </tbody>
       </table>
     </div>

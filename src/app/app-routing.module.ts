@@ -1,4 +1,3 @@
-import { StudentComponent } from './student/student/student.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './User_Authentication/login/login.component';

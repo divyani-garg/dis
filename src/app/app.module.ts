@@ -1,3 +1,5 @@
+import { StaffModule } from './staff/staff.module';
+import { StaffRoutingModule } from './staff/staff-routing.module';
 import { StudentRoutingModule } from './student/student-routing.module';
 import { StudentModule } from './student/student.module';
 import { BrowserModule } from '@angular/platform-browser';

@@ -20,7 +20,8 @@ import { HodInfrastuctureModule } from './hod-infrastucture/hod-infrastucture.mo
   imports: [
     CommonModule,
     HodRoutingModule,
-    HodInfrastuctureModule
+    HodInfrastuctureModule,
+    
   ],
   declarations: [
      HomeComponent,

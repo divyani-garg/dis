@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SemesterSubjectsService } from './../../API_Service/SemesterSubjectsService';
 
 @Component({
   selector: 'app-assignments',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssignmentsComponent implements OnInit {
 
-  constructor() { }
+  subjects: any;
+
+  constructor(private semSubjects: SemesterSubjectsService) { }
 
   ngOnInit() {
+    this.subjects = this.semSubjects.getSubjectList();
   }
 
 }
