@@ -16,6 +16,7 @@ import { ForgotPasswordComponent } from './User_Authentication/forgot-password/f
 import { ResetPasswordComponent } from './User_Authentication/reset-password/reset-password.component';
 import { FacultyModule } from './faculty/faculty.module';
 import { AboutModule} from './faculty/about/about.module'
+import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 
 
 @NgModule({
@@ -34,8 +35,7 @@ import { AboutModule} from './faculty/about/about.module'
     FormsModule,
     HttpClientModule,
     StaffModule,
-    FacultyModule,
-  
+    FacultyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
