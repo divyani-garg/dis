@@ -4,11 +4,11 @@ import { HodComponent } from './hod/hod.component';
 import { HomeComponent } from './home/home.component';
 import { AdministrationComponent } from './administration/administration.component';
 import { FacultyComponent } from './faculty/faculty.component';
-import { HodStudentModule } from './hod-student/hod-student.module';
-import { DocumentsRoutingModule } from './documents/documents-routing.module';
 import { RequestsComponent } from './requests/requests.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { AlertsComponent } from './alerts/alerts.component';
+import { StudentComponent } from './student/student.component';
+import { DocumentsComponent } from './documents/documents.component';
 const routes: Routes = [
   { path: 'hod',
     component: HodComponent,
@@ -16,6 +16,14 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent
+      },
+      {
+        path: 'student',
+        component: StudentComponent
+      },
+      {
+        path: 'documents',
+        component: DocumentsComponent
       },
       {
         path: 'home',

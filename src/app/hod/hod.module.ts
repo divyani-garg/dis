@@ -13,15 +13,13 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HodComponent } from './hod/hod.component';
 import { SidenavigationComponent } from './sidenavigation/sidenavigation.component';
 import { CalendarComponent } from '../miscellaneous/calendar/calendar.component';
-import { HodStudentModule } from './hod-student/hod-student.module';
-import { DocumentsModule } from './documents/documents.module';
+import { StudentComponent } from './student/student.component';
+import { DocumentsComponent } from './documents/documents.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    HodRoutingModule,
-    HodStudentModule,
-    DocumentsModule
+    HodRoutingModule
   ],
   declarations: [
      HomeComponent,
@@ -34,7 +32,9 @@ import { DocumentsModule } from './documents/documents.module';
      NavigationComponent, 
      HodComponent, 
      SidenavigationComponent,
-     CalendarComponent],
+     CalendarComponent,
+     StudentComponent,
+     DocumentsComponent],
      providers: [CalendarComponent],
      exports:[
        NavigationComponent
