@@ -30,31 +30,32 @@
     <div class="col-lg-9 kyc-colm user-management">
          <div class="kyc-section rewards-section reports-sectn">
            <div class="row">
-            <div class="col-lg-6 kyc-colm user-management">
-            <div class="btn-group btn-block">
-                <button type="button" class="btn btn-block btn-primary dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> Select Year  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-               <li><a href="#"><span class="glyphicon glyphicon-user"></span> Year</a></li>
-               <li><a href="#"><span class="glyphicon glyphicon-user"></span> Faculty</a></li>
-                      
-                       <li><a href="#"><span class="glyphicon glyphicon-phone"></span> Lab</a></li>   
-                </ul>
+            <div class="input-group mb-1">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Select</label>
               </div>
-         </div>
-         <div class="col-lg-6 kyc-colm user-management">
-            <div class="btn-group btn-block">
-                <button type="button" class="btn btn-block btn-primary dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> BE III Year  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-               <li><a href="#"><span class="glyphicon glyphicon-user"></span> BE II Year</a></li>
-               <li><a href="#"><span class="glyphicon glyphicon-user"></span> BE III Year</a></li>
-               <li><a href="#"><span class="glyphicon glyphicon-user"></span> BE IV Year</a></li>
-               <li><a href="#"><span class="glyphicon glyphicon-user"></span> ME I Year</a></li>
-               <li><a href="#"><span class="glyphicon glyphicon-phone"></span> ME II Year</a></li>   
-                </ul>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">year</option>
+                <option value="2">Lab</option>
+                <option value="3">Faculty</option>
+              </select>
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Select Year</label>
               </div>
-         </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">BE I Year</option>
+                <option value="2">BE II Year</option>
+                <option value="3">BE III Year</option>
+                <option value="4">BE IV Year</option>
+              </select>
+              
+                    
+          
+                  
+              
+            </div>
          </div>
          <div class="container">
          <table class="table table-bordered table-striped">

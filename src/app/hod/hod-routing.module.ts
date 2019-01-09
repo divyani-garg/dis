@@ -8,12 +8,17 @@ import { HodStudentModule } from './hod-student/hod-student.module';
 import { DocumentsRoutingModule } from './documents/documents-routing.module';
 import { RequestsComponent } from './requests/requests.component';
 import { TimetableComponent } from './timetable/timetable.component';
+import { AlertsComponent } from './alerts/alerts.component';
 const routes: Routes = [
   { path: 'hod',
     component: HodComponent,
     children: [
       {
         path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'home',
         component: HomeComponent
       },
       {
@@ -31,6 +36,10 @@ const routes: Routes = [
       {
         path: 'timetable',
         component: TimetableComponent
+      },
+      {
+        path: 'alerts',
+        component: AlertsComponent
       }
     ]
   }
