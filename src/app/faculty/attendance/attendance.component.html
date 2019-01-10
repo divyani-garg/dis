@@ -4,12 +4,14 @@
       <div class="kyc-section rewards-section reports-sectn">
         <!--Start Left Panel-->
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="border-right:1px solid #ADAAAA;">
             <div class="">
               <div class="row">
                 <div class="col page-headng" style="width:150%;">
                   <h3>Calendar</h3>
-                  <div id='calendar'></div>
+                  <div id='calendar'>
+                    <app-calendar></app-calendar>
+                  </div>
                 </div>
               </div>
               <br>
@@ -52,15 +54,14 @@
                   </div>
                 </div>
 
-                <div class="col-lg-7 bar-chart">
+                <div class="col-lg-7 pieChart">
                   <h5 style="color:#1488CC">Attendance</h5>
                   <div class="row">
                     <div class="col-md-1"></div>
-                    <div class="col-md-10">
-
-                      <canvas id="barChart"></canvas>
-                      <script type="text/javascript" src="..\assets\js\barchart.js"></script>
+                    <!---<div class="col-md-10">
+                        <canvas id="pieChart"></canvas>
                     </div>
+                  -->
                     <div class="col-md-1"></div>
                   </div>
                 </div>
@@ -78,11 +79,11 @@
                 <h3>Apply for Leave</h3>
               </div>
               <form>
-                <label class="">Description</label>
+                <label class="">Description : </label>
                 <br>
                 <input class="form-control col-lg" type="text" name="" placeholder="enter description..">
                 <br>
-                <label class="control-label" for="Type of leave">Leave Type</label>
+                <label class="control-label" for="Type of leave">Leave Type : </label>
                 <div>
                   <select id="leavetype" class="form-control">
                     <option>Select</option>
@@ -115,19 +116,19 @@
 
                 <div class="row">
                   <div class="col-lg-6">
-                    <label for="From">From </label>
-                    <input type="date" name="From">
+                    <label for="From">From : </label>
+                    <input type="date" name="From" style="margin-left:2%;">
                   </div>
                   <div class="col-lg-6">
-                    <label for="To">To </label>
-                    <input type="date" name="To">
+                    <label for="To">To : </label>
+                    <input type="date" name="To" style="margin-left:2%;">
                   </div>
                 </div>
                 <br>
                 <div>
-                  <label for="reason">Reason*</label>
+                  <label for="reason">Reason : </label>
                   <textarea class="form-control" placeholder="Due to some family problem i am not able to come."
-                    rows="5" id="reason"></textarea>
+                    rows="10" id="reason"></textarea>
                 </div>
                 <br>
                 <div class="form-actions row text-center ">

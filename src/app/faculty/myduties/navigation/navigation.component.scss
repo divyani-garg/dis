@@ -45,13 +45,13 @@
     color:yellow;
     }
   .subjectandFacultyBackground{
-    background:#726F6F;
+    background:rgb(68, 67, 67);
     padding: 3%;
     color:white;
     width : 100%;
   }
   .industrialVisitHeadingBackground{
-    background:#726F6F;
+    background:rgb(68, 67, 67);
     padding: 1%;
     color:white;
     width : 100%;
@@ -62,10 +62,12 @@
     color:#f46404;
     padding-left:2%;
   }
-  .letter-spacing {
-    padding-right: 2%;
+  .table-padding{
+    padding-top:6%;
   }
-
-  .letter-selected {
-    color: #f46404;
+  .modal-header{
+    background-color:rgb(4, 58, 87);
+    color:white;
+    margin:0%;
+    
   }

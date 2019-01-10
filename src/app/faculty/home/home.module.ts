@@ -6,11 +6,13 @@ import { HomeComponent } from './home/home.component';
 import { NotificationComponent } from './notification/notification.component';
 import { FacultyhomeComponent } from './facultyhome/facultyhome.component';
 import { SidenavigationComponent } from './sidenavigation/sidenavigation.component';
+import { MiscellaneousModule } from 'src/app/miscellaneous/miscellaneous.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MiscellaneousModule
   ],
   declarations: [HomeComponent, NotificationComponent, FacultyhomeComponent,SidenavigationComponent]
 })

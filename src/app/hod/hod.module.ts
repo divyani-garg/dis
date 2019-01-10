@@ -11,16 +11,19 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HodComponent } from './hod/hod.component';
 import { SidenavigationComponent } from './sidenavigation/sidenavigation.component';
-import { CalendarComponent } from '../miscellaneous/calendar/calendar.component';
 import { StudentComponent } from './student/student.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { HodInfrastuctureModule } from './hod-infrastucture/hod-infrastucture.module';
+import { MiscellaneousModule } from '../miscellaneous/miscellaneous.module';
+import { ToDoComponent } from './to-do/to-do.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   imports: [
     CommonModule,
     HodRoutingModule,
     HodInfrastuctureModule,
+    MiscellaneousModule
     
   ],
   declarations: [
@@ -33,10 +36,12 @@ import { HodInfrastuctureModule } from './hod-infrastucture/hod-infrastucture.mo
      NavigationComponent, 
      HodComponent, 
      SidenavigationComponent,
-     CalendarComponent,
+     
      StudentComponent,
-     DocumentsComponent],
-     providers: [CalendarComponent],
+     DocumentsComponent,
+     ToDoComponent,
+     ProfileComponent],
+     providers: [],
      exports:[
        NavigationComponent
      ]

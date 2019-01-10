@@ -10,6 +10,8 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { StudentComponent } from './student/student.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { InfrastructureComponent } from './hod-infrastucture/infrastructure/infrastructure.component';
+import { ToDoComponent } from './to-do/to-do.component';
+import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   { path: 'hod',
     component: HodComponent,
@@ -29,6 +31,14 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent
+      },
+      {
+        path: 'to-do',
+        component: ToDoComponent
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent
       },
       {
         path: 'hod_tasks',
