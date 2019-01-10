@@ -49,16 +49,16 @@
 
     }
   </style>
-<div class="modal fade my-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true" style="width:100%;">
+<div class="modal fade my-modal"  tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
      <div class="modal-content">
         <div class="col-lg-12 kyc-colm user-management">
-            <div class="kyc-section rewards-section reports-sectn">
+        
   
               <div class="row page-headng">
                
-                <div class="col-lg-12 table-responsive page-headng">
-                    <h3>Time Table</h3>
+                <div class="col-lg-12">
+                    <h3>Time Table <button type="button" class="close" data-dismiss="modal">&times;</button></h3>
                   <table class="table table-bordered table-striped">
                     <thead>
                       <tr>
@@ -137,7 +137,6 @@
                 </div>
                 
               </div>
-            </div>
           </div>
     </div>
 </div>
@@ -150,7 +149,7 @@
         <!--En-->
           
           <!--En-->
-        <h3 class="modal-title heading">Assign New Task</h3>
+        <h3 class="modal-title">Assign New Task</h3>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
         
       </div>
@@ -190,9 +189,9 @@
               <h6 class="heading">Description(If any) </h6>
               <input class="form-control form-control-lg" id="inputlg" type="text">
             </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
-          </form>
-       
+            </form>
+            <button type="button" class="btn btn-primary">Submit</button>
+          
         
       </div>
       
@@ -215,7 +214,7 @@
           
         </ul>
         <hr/>
-        <div class="tab-content" >
+        <div class="tab-content " >
           <div class ="tab-pane fade show active" id ="sectionA" role="tabpane1" aria-labelledby="sectionA-tab">
           <div class="row"> 
             <div class="col-lg-2 col-sm-6">
@@ -228,9 +227,9 @@
                           </a>
                         
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <button class=" dropdown-item" data-toggle="modal" data-target=".my-modal">Time Table</button>
+                            <button class="btn dropdown-item" data-toggle="modal" data-target=".my-modal">Time Table</button>
                             <a class="dropdown-item" href="hod/hod_tasks">Assigned Tasks</a>
-                            <button class=" dropdown-item" data-toggle="modal" data-target=".my-modal2">Assign New Task</button>
+                            <button class="btn dropdown-item" data-toggle="modal" data-target=".my-modal2">Assign New Task</button>
                             <a class="dropdown-item" href="#">Profile</a>
                           </div>
                         </div>
