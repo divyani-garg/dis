@@ -4,7 +4,6 @@ import { FacultyComponent } from './faculty/faculty.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { AboutRoutingModule } from './about/about-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { StudentRoutingModule } from './student/student-routing.module';
 import { ComplaintsRoutingModule } from './complaints/complaints-routing.module';
@@ -54,7 +53,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes),AboutRoutingModule,HomeRoutingModule,StudentRoutingModule,
+  imports: [RouterModule.forChild(routes),HomeRoutingModule,StudentRoutingModule,
     ComplaintsRoutingModule,MydutiesRoutingModule],
   exports: [RouterModule]
 })

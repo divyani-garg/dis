@@ -12,6 +12,10 @@ import { AppComponent } from './app.component';
 import { FacultyModule } from './faculty/faculty.module';
 import { AboutModule} from './faculty/about/about.module'
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
+import { HodRoutingModule } from './hod/hod-routing.module';
+import { HodModule } from './hod/hod.module';
+
+
 
 import { LoginComponent } from './authentication/login/login.component';
 import { SignUpComponent } from './authentication/sign-up/sign-up.component';
@@ -25,15 +29,18 @@ import { ResetPasswordComponent } from './authentication/reset-password/reset-pa
     SignUpComponent,
     ForgotPasswordComponent,
     ResetPasswordComponent,
-   ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StudentModule,
     FormsModule,
     HttpClientModule,
-    StaffModule,
-    FacultyModule
+    StudentRoutingModule,
+    HodRoutingModule,
+    HodModule,
+    FacultyModule,
+    StaffModule
   ],
   providers: [],
   bootstrap: [AppComponent]
