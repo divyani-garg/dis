@@ -17,6 +17,7 @@ import { SidenavigationComponent } from '../faculty/sidenavigation/sidenavigatio
 import { MydutiesModule } from './myduties/myduties.module';
 import { StudentRollListModule } from './student/student-roll-list/student-roll-list.module';
 import { DocumentsComponent } from './documents/documents.component';
+import { MiscellaneousModule } from 'src/app/miscellaneous/miscellaneous.module';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { DocumentsComponent } from './documents/documents.component';
     HomeModule,
     ComplaintsModule,
     MydutiesModule,
+    MiscellaneousModule
    ],
   declarations: [AttendanceComponent, AlertsComponent, NavigationComponent, 
     FacultyComponent, PageNotFoundComponent,SidenavigationComponent, DocumentsComponent
