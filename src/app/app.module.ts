@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { AuthenticationComponent } from './User_Authentication/authentication/authentication.component';
 import { LoginComponent } from './User_Authentication/login/login.component';
 import { SignUpComponent } from './User_Authentication/sign-up/sign-up.component';
@@ -18,11 +19,16 @@ import { FacultyModule } from './faculty/faculty.module';
 import { AboutModule} from './faculty/about/about.module'
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 
+=======
+import { LoginComponent } from './authentication/login/login.component';
+import { SignUpComponent } from './authentication/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './authentication/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './authentication/reset-password/reset-password.component';
+>>>>>>> 359a8f0ee5b2183e3f1a9a8c6f0558e37fe1204e
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthenticationComponent,
     LoginComponent,
     SignUpComponent,
     ForgotPasswordComponent,
