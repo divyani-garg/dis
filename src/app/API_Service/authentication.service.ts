@@ -12,19 +12,19 @@ export class AuthenticationService {
 
   constructor(private http: HttpClient) { }
 
-  public login(Authentication: Object): Observable<Object>{
-    return this.http.post(`${this.baseUrl}` + `/login`, Authentication);
+  public login(Authentication: Object): Observable<any>{
+    return this.http.post(`${this.baseUrl}` + `/login`, Authentication, { responseType: 'text' });
   }
 
-  public signup(Authentication: Object): Observable<Object>{
-    return this.http.post(`${this.baseUrl}` + `/signup`, Authentication);
+  public signup(Authentication: Object): Observable<any>{
+    return this.http.post(`${this.baseUrl}` + `/signup`, Authentication, { responseType: 'text' });
   }
   
-  public forgotPassword(Authentication: Object): Observable<Object> {
+  public forgotPassword(Authentication: Object): Observable<any> {
      return this.http.post(`${this.baseUrl}` + `/forgot-password`, Authentication);
   }
 
-  public resetPassword(Authentication: Object): Observable<Object> {
+  public resetPassword(Authentication: Object): Observable<any> {
     return this.http.post(`${this.baseUrl}` + `/reset-password`, Authentication);
   }
 

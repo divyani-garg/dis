@@ -9,9 +9,10 @@ import { AuthenticationService } from '../../API_Service/authentication.service'
 })
 export class LoginComponent implements OnInit {
 
+  user: String;
   authentication: Authentication = new Authentication();
   submitted = false;
-
+  userType = String;
   constructor(private authenticationService: AuthenticationService) { }
 
   ngOnInit() {
@@ -22,15 +23,21 @@ export class LoginComponent implements OnInit {
     this.authentication = new Authentication();
   }
 
-  save(){
+  login(){
     console.log(this.authentication.username);
     this.authenticationService.login(this.authentication)
-    .subscribe(data => console.log(data), error => console.log(error));
+    .subscribe(
+      data => this.redirect(data), error => console.log(error));
     this.authentication = new Authentication();
+  }
+
+  redirect(userType) {
+    this.user=(userType)
+    console.log(this.user);
   }
 
   onSubmit() {
     this.submitted = true;
-    this.save();
+    this.login();
   }
 }
