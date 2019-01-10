@@ -15,6 +15,7 @@ import { CalendarComponent } from '../miscellaneous/calendar/calendar.component'
 import { StudentComponent } from './student/student.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { HodInfrastuctureModule } from './hod-infrastucture/hod-infrastucture.module';
+import { MeetingsComponent } from './meetings/meetings.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { HodInfrastuctureModule } from './hod-infrastucture/hod-infrastucture.mo
      SidenavigationComponent,
      CalendarComponent,
      StudentComponent,
-     DocumentsComponent],
+     DocumentsComponent,
+     MeetingsComponent],
      providers: [CalendarComponent],
      exports:[
        NavigationComponent
