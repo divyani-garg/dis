@@ -27,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), StudentRoutingModule, StaffRoutingModule, FacultyRoutingModule,HodRoutingModule],
+  imports: [RouterModule.forRoot(routes), StudentRoutingModule, StaffRoutingModule, FacultyRoutingModule, HodRoutingModule],
   exports: [RouterModule]
 })
 

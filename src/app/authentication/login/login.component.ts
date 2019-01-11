@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
   }
 
   redirect(userType) {
-    this.user=(userType)
+    this.user = userType;
     console.log(this.user);
   }
 

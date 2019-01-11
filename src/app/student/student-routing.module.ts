@@ -11,6 +11,8 @@ import { AssignmentsComponent } from './assignments/assignments.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { TimetableComponent } from './timetable/timetable.component';
+import { InfrastructureComponent } from '../hod/hod-infrastucture/infrastructure/infrastructure.component';
+import { HodInfrastuctureModule } from '../hod/hod-infrastucture/hod-infrastucture.module';
 
 const routes: Routes = [
   { path: 'student',
@@ -28,6 +30,11 @@ const routes: Routes = [
         path: 'student_about',
         component: AboutComponent,
         loadChildren: () => AboutModule
+      },
+      {
+        path: 'student_infrastructure',
+        component: InfrastructureComponent,
+        loadChildren: () => HodInfrastuctureModule
       },
       {
         path: 'student_attendance',
