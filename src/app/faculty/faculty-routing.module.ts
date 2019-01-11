@@ -15,6 +15,9 @@ import { MydutiesRoutingModule } from './myduties/myduties-routing.module';
 import { DocumentsComponent } from './documents/documents.component';
 import { AboutComponent } from '../about/about/about.component';
 import { AboutModule } from '../about/about.module';
+import { FacultyProfileComponent } from './faculty-profile/faculty-profile.component';
+import { InfrastructureComponent } from '../hod/hod-infrastucture/infrastructure/infrastructure.component';
+import { HodInfrastuctureModule } from '../hod/hod-infrastucture/hod-infrastucture.module';
 
 const routes: Routes = [
   {
@@ -31,6 +34,11 @@ const routes: Routes = [
         component : MydutiesComponent
       },
       {
+        path: 'infrastructure',
+        component: InfrastructureComponent,
+        loadChildren: ()=> HodInfrastuctureModule
+      },
+      {
         path : 'attendance',
         component: AttendanceComponent
       },
@@ -45,6 +53,10 @@ const routes: Routes = [
       {
         path : 'documents',
         component : DocumentsComponent
+      },
+      {
+        path: 'faculty_profile',
+        component : FacultyProfileComponent
       },
       {
         path : '**',
