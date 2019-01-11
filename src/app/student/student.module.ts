@@ -1,3 +1,4 @@
+import { BarchartComponent } from './../miscellaneous/barchart/barchart.component';
 import { AboutRoutingModule } from './../about/about-routing.module';
 import { AboutModule } from './../about/about.module';
 import { CalendarComponent } from './../miscellaneous/calendar/calendar.component';
@@ -40,7 +41,7 @@ import { MiscellaneousModule } from '../miscellaneous/miscellaneous.module';
     TimetableComponent,
     SidenavigationComponent
   ],
-  providers: [],
+  providers: [BarchartComponent],
   exports: [NavigationComponent]
 })
 export class StudentModule { }

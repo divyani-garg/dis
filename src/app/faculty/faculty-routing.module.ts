@@ -1,3 +1,4 @@
+import { HomeModule } from './home/home.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FacultyComponent } from './faculty/faculty.component';
@@ -12,6 +13,10 @@ import { HomeComponent } from './home/home/home.component';
 import { MydutiesComponent } from './myduties/myduties/myduties.component';
 import { MydutiesRoutingModule } from './myduties/myduties-routing.module';
 import { DocumentsComponent } from './documents/documents.component';
+import { FacultyhomeComponent } from './home/facultyhome/facultyhome.component';
+import { NotificationComponent } from './home/notification/notification.component';
+import { AboutComponent } from '../about/about/about.component';
+import { AboutModule } from '../about/about.module';
 
 const routes: Routes = [
   {
@@ -19,8 +24,9 @@ const routes: Routes = [
     component : FacultyComponent,
     children : [
       {
-        path : '',
-        component : HomeComponent
+        path: 'about',
+        component: AboutComponent,
+        loadChildren: () => AboutModule
       },
       {
         path : 'my_duties',
@@ -46,15 +52,14 @@ const routes: Routes = [
         path : '**',
         component : PageNotFoundComponent
 
-      },
-      
+      }
      ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes),HomeRoutingModule,StudentRoutingModule,
-    ComplaintsRoutingModule,MydutiesRoutingModule],
+  imports: [RouterModule.forChild(routes), StudentRoutingModule,
+    ComplaintsRoutingModule, MydutiesRoutingModule],
   exports: [RouterModule]
 })
 export class FacultyRoutingModule { }

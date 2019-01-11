@@ -1,3 +1,5 @@
+import { PiechartComponent } from './../miscellaneous/piechart/piechart.component';
+import { AboutModule } from './../about/about.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -26,10 +28,12 @@ import { MiscellaneousModule } from 'src/app/miscellaneous/miscellaneous.module'
     HomeModule,
     ComplaintsModule,
     MydutiesModule,
-    MiscellaneousModule
+    MiscellaneousModule,
+    AboutModule
    ],
-  declarations: [AttendanceComponent, AlertsComponent, NavigationComponent, 
-    FacultyComponent, PageNotFoundComponent,SidenavigationComponent, DocumentsComponent
-    ] 
+  declarations: [AttendanceComponent, AlertsComponent, NavigationComponent,
+    FacultyComponent, PageNotFoundComponent, SidenavigationComponent, DocumentsComponent
+    ],
+  providers: [PiechartComponent]
 })
 export class FacultyModule { }

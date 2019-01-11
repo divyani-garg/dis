@@ -10,7 +10,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FacultyModule } from './faculty/faculty.module';
-import { AboutModule} from './faculty/about/about.module'
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { HodRoutingModule } from './hod/hod-routing.module';
 import { HodModule } from './hod/hod.module';
