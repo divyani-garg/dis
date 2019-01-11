@@ -21,6 +21,11 @@ import { CentralInventoryComponent } from './central-inventory/central-inventory
     InfrastructureTimeTableComponent,
     CentralInventoryComponent
   ],
-  providers:[NavigationComponent]
+  providers:[NavigationComponent],
+  exports: [InfrastructureComponent,
+    HodInfrastructureComponent,
+    InfrastructureTimeTableComponent,
+    InfrastructureTimeTableComponent,
+    CentralInventoryComponent]
 })
 export class HodInfrastuctureModule { }

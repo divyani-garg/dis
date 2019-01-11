@@ -17,6 +17,8 @@ import { TimetableComponent } from './timetable/timetable.component';
 import { SidenavigationComponent } from './sidenavigation/sidenavigation.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { MiscellaneousModule } from '../miscellaneous/miscellaneous.module';
+import { HodInfrastuctureModule } from '../hod/hod-infrastucture/hod-infrastucture.module';
+import { BarchartComponent } from '../miscellaneous/barchart/barchart.component';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { MiscellaneousModule } from '../miscellaneous/miscellaneous.module';
     StudentRoutingModule,
     AboutModule,
     AboutRoutingModule,
-    MiscellaneousModule
+    MiscellaneousModule,
+    HodInfrastuctureModule
   ],
   declarations: [
     HomeComponent,
@@ -40,7 +43,7 @@ import { MiscellaneousModule } from '../miscellaneous/miscellaneous.module';
     TimetableComponent,
     SidenavigationComponent
   ],
-  providers: [],
+  providers: [BarchartComponent],
   exports: [NavigationComponent]
 })
 export class StudentModule { }
