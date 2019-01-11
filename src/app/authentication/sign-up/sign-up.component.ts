@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Authentication } from '../../model/authentication.model';
-import { AuthenticationService } from '../../API_service/authentication.service';
+import { Authentication } from '../../Model/authentication.model';
+import { AuthenticationService } from '../../API_Service/authentication.service';
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss']
 })
-export class SignUpComponent implements OnInit 
+export class SignUpComponent implements OnInit
 {
   auth: Authentication = new Authentication();
   submitted = false;

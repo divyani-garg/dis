@@ -16,7 +16,7 @@ const routes: Routes = [
      component: ResetPasswordComponent
   },
   { path: 'signup',
-     component: SignUpComponent
+    component: SignUpComponent
   },
   {
     path: '',
@@ -25,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), StudentRoutingModule, StaffRoutingModule,FacultyRoutingModule],
+  imports: [RouterModule.forRoot(routes), StudentRoutingModule, StaffRoutingModule, FacultyRoutingModule],
   exports: [RouterModule]
 })
 

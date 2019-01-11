@@ -1,3 +1,5 @@
+import { AboutModule } from './../about/about.module';
+import { AboutComponent } from './../about/about/about.component';
 import { ProfileComponent } from './profile/profile.component';
 import { StudentComponent } from './student/student.component';
 import { HomeComponent } from './home/home.component';
@@ -8,7 +10,6 @@ import { ComplaintsComponent } from './complaints/complaints.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { AttendanceComponent } from './attendance/attendance.component';
-import { AboutComponent } from './about/about.component';
 import { TimetableComponent } from './timetable/timetable.component';
 
 const routes: Routes = [
@@ -24,12 +25,13 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'student_attendance',
-        component: AttendanceComponent
+        path: 'student_about',
+        component: AboutComponent,
+        loadChildren: () => AboutModule
       },
       {
-        path: 'student_about',
-        component: AboutComponent
+        path: 'student_attendance',
+        component: AttendanceComponent
       },
       {
         path: 'student_timetable',

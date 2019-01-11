@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 
 export class StudentService {
 
-  private baseUrl = 'http://localhost:8090/dis';
+  private baseUrl = 'http://localhost:8082/dis';
 
   constructor(private http: HttpClient) { }
 

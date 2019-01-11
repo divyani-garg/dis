@@ -10,9 +10,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FacultyModule } from './faculty/faculty.module';
-import { AboutModule} from './faculty/about/about.module'
-import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
-
 import { LoginComponent } from './authentication/login/login.component';
 import { SignUpComponent } from './authentication/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './authentication/forgot-password/forgot-password.component';

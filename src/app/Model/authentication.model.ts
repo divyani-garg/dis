@@ -1,4 +1,4 @@
-export class Authentication {    
+export class Authentication {
     username: string;
     password: string;
     cnf_password: string;
