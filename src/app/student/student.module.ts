@@ -1,4 +1,3 @@
-import { BarchartComponent } from './../miscellaneous/barchart/barchart.component';
 import { AboutRoutingModule } from './../about/about-routing.module';
 import { AboutModule } from './../about/about.module';
 import { CalendarComponent } from './../miscellaneous/calendar/calendar.component';
