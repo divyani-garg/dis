@@ -18,10 +18,7 @@ const routes: Routes = [
     path : 'faculty',
     component : FacultyComponent,
     children : [
-      {
-        path : '',
-        component : HomeComponent
-      },
+     
       {
         path : 'my_duties',
         component : MydutiesComponent

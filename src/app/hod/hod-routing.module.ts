@@ -12,6 +12,8 @@ import { DocumentsComponent } from './documents/documents.component';
 import { InfrastructureComponent } from './hod-infrastucture/infrastructure/infrastructure.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AboutModule } from '../about/about.module';
+import { AboutComponent } from '../about/about/about.component';
 const routes: Routes = [
   { path: 'hod',
     component: HodComponent,
@@ -23,6 +25,11 @@ const routes: Routes = [
       {
         path: 'student',
         component: StudentComponent
+      },
+      {
+        path: 'hod_about',
+        component: AboutComponent,
+        loadChildren: () => AboutModule
       },
       {
         path: 'documents',
