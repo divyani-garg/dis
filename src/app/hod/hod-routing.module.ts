@@ -12,6 +12,7 @@ import { DocumentsComponent } from './documents/documents.component';
 import { InfrastructureComponent } from './hod-infrastucture/infrastructure/infrastructure.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { ProfileComponent } from './profile/profile.component';
+import { MeetingsComponent } from './meetings/meetings.component';
 const routes: Routes = [
   { path: 'hod',
     component: HodComponent,
@@ -63,6 +64,10 @@ const routes: Routes = [
       {
         path: 'alerts',
         component: AlertsComponent
+      },
+      {
+        path: 'meetings',
+        component: MeetingsComponent
       }
     ]
   }
