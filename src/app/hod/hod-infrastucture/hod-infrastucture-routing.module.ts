@@ -8,18 +8,18 @@ import { CentralInventoryComponent } from './central-inventory/central-inventory
 
 const routes: Routes = [
           {
-            path: '',
-            component: InfrastructureComponent
-          },
-          {
-            path: 'timetable',
-            component: InfrastructureTimeTableComponent
-          },
-          {
-            path: 'Cinventory',
-            component: CentralInventoryComponent
-          }
-];
+                    path: '',
+                    component: InfrastructureComponent
+                  },
+                  {
+                    path: 'timetable',
+                    component: InfrastructureTimeTableComponent
+                  },
+                  {
+                    path: 'Cinventory',
+                    component: CentralInventoryComponent
+                  }
+                ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

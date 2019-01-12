@@ -13,6 +13,7 @@ import { AttendanceComponent } from './attendance/attendance.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { InfrastructureComponent } from '../hod/hod-infrastucture/infrastructure/infrastructure.component';
 import { HodInfrastuctureModule } from '../hod/hod-infrastucture/hod-infrastucture.module';
+import { LoginComponent } from '../authentication/login/login.component';
 
 const routes: Routes = [
   { path: 'student',

@@ -15,6 +15,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { AboutModule } from '../about/about.module';
 import { AboutComponent } from '../about/about/about.component';
 import { HodInfrastuctureModule } from './hod-infrastucture/hod-infrastucture.module';
+import { HodInfrastructureComponent } from './hod-infrastucture/hod-infrastructure/hod-infrastructure.component';
 const routes: Routes = [
   { path: 'hod',
     component: HodComponent,
@@ -58,7 +59,7 @@ const routes: Routes = [
       },
       {
         path: 'infrastructure',
-        component: InfrastructureComponent,
+        component: HodInfrastructureComponent,
         loadChildren: ()=> HodInfrastuctureModule
       },
       {
